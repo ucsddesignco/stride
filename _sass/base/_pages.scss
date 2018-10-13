@@ -1,0 +1,26 @@
+/* Home blocks */
+#selected-companies {
+  .block-header {
+    @include md-up {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+/* About blocks */
+
+// #TODO
+.task-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.task {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+}

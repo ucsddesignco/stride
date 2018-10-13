@@ -1,0 +1,41 @@
+---
+layout: default
+title: Companies
+permalink: /companies
+order: 4
+---
+
+<div id="companies">
+  <div class="container container-2-col">
+    <div class="text">
+      <h1>{{ page.title }}</h1>
+      <p>The traditional career fair format doesn’t help students seeking design roles. Designers need a medium to showcase their work and experience. At Stride, students have the opportunity to showcase their projects and their portfolios versus handing off their resumes to recruiters.</p>
+      <a href="/about"><button class="bg-dark-green">Learn More</button></a>
+    </div>
+    <div class="illustration">
+    </div>
+  </div>
+</div>
+
+<div id="selected-companies" class="bg-light-green">
+  <div class="container">
+
+    <div class="block-header">
+      <h2>Attending Companies</h2>
+    </div>
+
+    <div class="card-container green">
+      {% for company in site.data.companies %}
+        <a class="card" href="{{ company.url }}" target="_blank">
+          <div class="card-image">
+            <img src="{{ company.logo }}" alt="{{ company.name }} logo">
+          </div>
+          <div class="card-text">
+            <h3>{{ company.name }}</h3>
+            <p>{{ company.description }}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

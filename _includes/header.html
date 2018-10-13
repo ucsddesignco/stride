@@ -1,0 +1,18 @@
+<div id="header">
+	<div class="container">
+
+		<header>
+			<p><a href="{{ site.baseurl }}">[logo]</a></p>
+		</header>
+
+		<aside>
+				<nav>
+					<ul>
+						{% assign sorted_pages = site.pages | sort:"order" %}{% for node in sorted_pages %}{% if node.title %}<li><a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>{% endif %}{% endfor %}
+						<li><a href="/"><button class="bg-red">Register Now</button></a></li>
+					</ul>
+				</nav>
+		</aside>
+
+	</div>
+</div>

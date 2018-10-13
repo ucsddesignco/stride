@@ -1,0 +1,45 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Sofia Pro', sans-serif;
+  color: $mine-shaft;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+}
+
+h1 {
+  color: $burnt-sienna;
+}
+
+h1, h2 {
+  margin: 1.8rem 0;
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 4.1rem;
+}
+
+h3 {
+  margin: 1.8rem 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+
+.card {
+  h3 {
+    margin: 0;
+  }
+}
+
+.dash {
+  color: $monte-carlo;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: $mine-shaft;
+}

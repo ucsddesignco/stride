@@ -1,0 +1,105 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  position: relative;
+  @include xxl-up {
+    font-size: 0.7vw;
+  }
+}
+
+.body-wrapper {
+  height: 100%;
+  min-height: calc(100vh - #{$footer-height} - #{$top-bottom-space});
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem $side-space-xs;
+  @include lg-up {
+    padding: 6rem $side-space-lg;
+  }
+  &.container-2-col {
+    @include md-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.block-header {
+  margin-bottom: 3rem;
+}
+
+#header, #footer {
+  font-weight: 500;
+  @include lg-up {
+    .container {
+      padding: 0 8rem;
+    }
+  }
+}
+
+#header {
+  margin-top: $top-bottom-space;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#footer {
+  .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: $footer-height;
+    text-align: center;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include md-up {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+}
+
+.copyright {
+  margin-bottom: 2rem;
+  @include md-up {
+    margin-bottom: 0;
+  }
+}
+
+nav {
+  li {
+    display: inline;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    &.active {
+      &:before {
+        content: "";
+        position: absolute;
+        //width: 50%;
+        width: 1.6rem;
+        height: .3rem;
+        bottom: 0;
+        left: 0;
+        border-bottom: .3rem solid $chardonnay;
+      }
+    }
+  }
+  button {
+    margin: 0;
+  }
+}

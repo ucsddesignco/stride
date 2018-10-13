@@ -1,0 +1,47 @@
+- name: Intuit
+  selected: true
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Intuit_Logo.svg/1280px-Intuit_Logo.svg.png
+  url: https://www.intuit.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: ServiceNow
+  selected: true
+  logo: http://www.freelogovectors.net/wp-content/uploads/2018/08/servicenow-logo.png
+  url: https://www.servicenow.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: Sony
+  selected: true
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2000px-Sony_logo.svg.png
+  url: https://www.sony.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: Intuit
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Intuit_Logo.svg/1280px-Intuit_Logo.svg.png
+  url: https://www.intuit.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: ServiceNow
+  logo: http://www.freelogovectors.net/wp-content/uploads/2018/08/servicenow-logo.png
+  url: https://www.servicenow.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: Sony
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2000px-Sony_logo.svg.png
+  url: https://www.sony.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+  
+- name: Intuit
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Intuit_Logo.svg/1280px-Intuit_Logo.svg.png
+  url: https://www.intuit.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: ServiceNow
+  logo: http://www.freelogovectors.net/wp-content/uploads/2018/08/servicenow-logo.png
+  url: https://www.servicenow.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+
+- name: Sony
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2000px-Sony_logo.svg.png
+  url: https://www.sony.com/
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
