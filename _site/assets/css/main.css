@@ -126,7 +126,7 @@ html {
   padding-top: 4rem; }
   @media (min-width: 840px) {
     #header .container {
-      padding-top: 2rem; } }
+      padding-top: 0; } }
   @media (min-width: 960px) {
     #header .container {
       justify-content: space-between;

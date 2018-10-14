@@ -101,7 +101,7 @@ $text-illustration-gap: 3vw;
     padding-bottom: 0;
     padding-top: 4rem;
     @include md-up {
-      padding-top: 2rem;
+      padding-top: 0;
     }
     @include lg-up {
       justify-content: space-between;
