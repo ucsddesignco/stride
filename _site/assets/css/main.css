@@ -293,10 +293,11 @@ a {
   color: #2F8C7E; }
 
 /* Home blocks */
-#home {
-  margin-top: -3rem; }
-  #home h3 {
-    margin-top: -1rem; }
+#home h3 {
+  margin-top: -1rem; }
+@media (min-width: 960px) {
+  #home {
+    margin-top: -3rem; } }
 
 @media (min-width: 840px) {
   #selected-companies .block-header {

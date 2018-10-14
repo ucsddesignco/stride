@@ -1,9 +1,11 @@
 /* Home blocks */
 
 #home {
-  margin-top: -3rem;
   h3 {
     margin-top: -1rem;
+  }
+  @include lg-up {
+    margin-top: -3rem;
   }
 }
 
