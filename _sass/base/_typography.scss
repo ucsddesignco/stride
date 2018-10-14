@@ -3,8 +3,8 @@ body {
   font-family: 'Sofia Pro', sans-serif;
   color: $mine-shaft;
   font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 3.1rem;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
 }
 
 h1 {

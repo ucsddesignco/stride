@@ -1,8 +1,11 @@
 html {
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
+  font-size: 50%;
   position: relative;
+  @include sm-up {
+    font-size: 62.5%;
+  }
   @include xxl-up {
     font-size: 0.7vw;
   }
@@ -16,15 +19,60 @@ html {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 6rem $side-space-xs;
-  @include lg-up {
-    padding: 6rem $side-space-lg;
+  padding: 4rem $side-space-xs;
+  @include sm-up {
+    padding: $block-top-bottom-space $side-space-xs;
   }
-  &.container-2-col {
-    @include md-up {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  @include lg-up {
+    padding: $block-top-bottom-space $side-space-lg;
+  }
+}
+
+$text-illustration-gap: 3vw;
+
+.container-2-col {
+  @include md-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text, .illustration {
+      width: 50%;
     }
+    &:not(.reverse) {
+      .text {
+        padding-right: $text-illustration-gap;
+      }
+      .illustration {
+        padding-left: $text-illustration-gap;
+      }
+    }
+    &.reverse {
+      flex-direction: row-reverse;
+      .text {
+        padding-left: $text-illustration-gap;
+      }
+      .illustration {
+        padding-right: $text-illustration-gap;
+      }
+    }
+  }
+}
+
+.illustration {
+  user-select: none;
+  text-align: center;
+  img {
+    margin-top: 3rem;
+    width: 80%;
+    @include xs-up {
+      width: 50%;
+    }
+    @include md-up {
+      margin-top: 0;
+      max-height: 50rem;
+      width: 100%;
+    }
+
   }
 }
 
@@ -42,11 +90,67 @@ html {
 }
 
 #header {
-  margin-top: $top-bottom-space;
+  @include md-up {
+    margin-top: $top-bottom-space;
+  }
   .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 4rem;
+    @include sm-up {
+      padding-top: $block-top-bottom-space;
+    }
+    @include lg-up {
+      justify-content: space-between;
+
+      padding-bottom: $block-top-bottom-space;
+      flex-direction: row;
+    }
+  }
+}
+
+.register-button {
+  font-size: 1.5rem;
+  button {
+    padding: 1.8rem 1.5rem 1.5rem;
+    margin: 0;
+  }
+  @include md-up {
+    display: none;
+  }
+}
+
+.register-button-md {
+  display: none;
+  @include md-up {
+    display: inline-block;
+  }
+}
+
+// Vertically center logo
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  a {
+    margin: 0 0.8rem;
+  }
+  @include lg-up {
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: 2.8rem;
+    @include md-up {
+      height: 2.5rem;
+    }
   }
 }
 
@@ -79,25 +183,42 @@ html {
 nav {
   li {
     display: inline;
-    &:not(:last-child) {
-      margin-right: 3rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    margin: 0 2.2vw;
+    @include md-up {
+      margin: 0 3rem 0 0;
+      font-size: $font-size-body;
     }
-  }
-  a {
-    display: inline-block;
-    position: relative;
-    &.active {
+    a {
       &:before {
         content: "";
         position: absolute;
-        //width: 50%;
-        width: 1.6rem;
+        width: 0%;
         height: .3rem;
         bottom: 0;
         left: 0;
         border-bottom: .3rem solid $chardonnay;
+        transition: width .3s;
+      }
+      &.active {
+        &:before {
+          width: 1.6rem;
+        }
+      }
+      @include hover {
+        &:before {
+          width: 50%;
+        }
       }
     }
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    // Exclude styles from register button
+
   }
   button {
     margin: 0;

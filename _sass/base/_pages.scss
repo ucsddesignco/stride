@@ -14,13 +14,38 @@
 .task-container {
   text-align: center;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  @include sm-up {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .task {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 25rem;
+  padding: 0 2rem;
+  img {
+    height: 16rem;
+    @include sm-up {
+      height: 10rem;
+    }
+    @include md-up {
+      height: 15rem;
+    }
+    padding: 0 0 2rem;
+    // Sign up for an interview time
+    &:first-child {
+      margin-left: -2rem;
+    }
+    @include xl-up {
+      height: 20rem;
+    }
+  }
 }

@@ -13,6 +13,7 @@ order: 4
       <a href="/about"><button class="bg-dark-green">Learn More</button></a>
     </div>
     <div class="illustration">
+      <img src="/assets/images/companies.svg" alt="">
     </div>
   </div>
 </div>
@@ -28,7 +29,7 @@ order: 4
       {% for company in site.data.companies %}
         <a class="card" href="{{ company.url }}" target="_blank">
           <div class="card-image">
-            <img src="{{ company.logo }}" alt="{{ company.name }} logo">
+            <img src="{{ company.logo }}" alt="">
           </div>
           <div class="card-text">
             <h3>{{ company.name }}</h3>

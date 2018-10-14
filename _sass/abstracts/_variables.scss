@@ -8,7 +8,7 @@ $xxl-screen: 1440px;
 
 // Color palette
 $burnt-sienna: #EF5350; // Red
-$mine-shaft: #414141; // Black
+$mine-shaft: #424242; // Black
 $monte-carlo: #80CBC4; // Green
 $lochinvar: #2F8C7E; // Dark Green
 $aqua-squeeze: #E0F2F1; // Light green
@@ -16,10 +16,14 @@ $buttermilk: #FFECB3; // Yellow
 $chardonnay: #FFCC80; // Dark yellow
 $wild-sand: #F6F6F6; // Light gray
 
+$block-top-bottom-space: 6rem;
 $top-bottom-space: 4rem;
 
 $side-space-xs: 7vw;
 //$side-space-md: 8rem;
-$side-space-lg: 12rem;
+$side-space-lg: 14rem;
 
 $footer-height: 10rem;
+
+$font-size-body: 1.8rem;
+$line-height-body: 3rem;
