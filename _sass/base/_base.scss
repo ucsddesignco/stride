@@ -23,8 +23,8 @@ html {
   @include sm-up {
     padding: $block-top-bottom-space $side-space-xs;
   }
-  @include lg-up {
-    padding: $block-top-bottom-space $side-space-lg;
+  @include xl-up {
+    padding: $block-top-bottom-space $side-space-xl;
   }
 }
 
@@ -63,14 +63,14 @@ $text-illustration-gap: 3vw;
   text-align: center;
   img, svg {
     margin-top: 3rem;
-    width: 80%;
+    width: 80% !important; // !important needed to override runner svg
     @include xs-up {
-      width: 50%;
+      width: 50% !important;
     }
     @include md-up {
       margin-top: 0;
-      max-height: 50rem;
-      width: 100%;
+      max-height: 50rem !important;
+      width: 100% !important;
     }
   }
 }
@@ -104,7 +104,7 @@ $text-illustration-gap: 3vw;
     }
     @include lg-up {
       justify-content: space-between;
-      padding-bottom: $block-top-bottom-space;
+      padding-bottom: 3rem;
       flex-direction: row;
     }
   }

@@ -68,7 +68,7 @@ html {
   @media (min-width: 600px) {
     .container {
       padding: 6rem 7vw; } }
-  @media (min-width: 960px) {
+  @media (min-width: 1280px) {
     .container {
       padding: 6rem 14rem; } }
 
@@ -107,15 +107,15 @@ html {
   text-align: center; }
   .illustration img, .illustration svg {
     margin-top: 3rem;
-    width: 80%; }
+    width: 80% !important; }
     @media (min-width: 480px) {
       .illustration img, .illustration svg {
-        width: 50%; } }
+        width: 50% !important; } }
     @media (min-width: 840px) {
       .illustration img, .illustration svg {
         margin-top: 0;
-        max-height: 50rem;
-        width: 100%; } }
+        max-height: 50rem !important;
+        width: 100% !important; } }
 
 .block-header {
   margin-bottom: 3rem; }
@@ -153,7 +153,7 @@ html {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding-bottom: 6rem;
+      padding-bottom: 3rem;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
