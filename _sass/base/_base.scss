@@ -61,7 +61,7 @@ $text-illustration-gap: 3vw;
 .illustration {
   user-select: none;
   text-align: center;
-  img {
+  img, svg {
     margin-top: 3rem;
     width: 80%;
     @include xs-up {

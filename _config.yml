@@ -23,6 +23,7 @@ github_username:  designatucsd
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-autoprefixer
 sass:
   sass_dir: _sass
 include: ['_pages']
