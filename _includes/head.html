@@ -6,7 +6,7 @@
 	<title>
 		{% if page.title == "Home" %}
 			{{ site.title }} | {{ site.description }}
-		{% elsif page.title %}{{ page.title }} | {% else %}{% endif %}{{ site.title }}
+		{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{% endif %}
 	</title>
 
 	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">

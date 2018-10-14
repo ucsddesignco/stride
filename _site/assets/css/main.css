@@ -138,14 +138,14 @@ html {
   .register-button button {
     padding: 1.8rem 1.5rem 1.5rem;
     margin: 0; }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .register-button {
       display: none; } }
 
-.register-button-md {
+.register-button-lg {
   display: none; }
-  @media (min-width: 840px) {
-    .register-button-md {
+  @media (min-width: 960px) {
+    .register-button-lg {
       display: inline-block; } }
 
 header {
@@ -191,13 +191,15 @@ header {
 
 nav li {
   display: inline;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   white-space: nowrap;
-  margin: 0 2.2vw; }
-  @media (min-width: 840px) {
+  margin: 0 2.6vw; }
+  @media (min-width: 960px) {
     nav li {
-      margin: 0 3rem 0 0;
-      font-size: 1.8rem; } }
+      margin: 0;
+      font-size: 1.8rem; }
+      nav li:not(:last-child) {
+        margin-right: 3rem; } }
   nav li a:before {
     content: "";
     position: absolute;
@@ -291,6 +293,11 @@ a {
   color: #2F8C7E; }
 
 /* Home blocks */
+#home {
+  margin-top: -3rem; }
+  #home h3 {
+    margin-top: -1rem; }
+
 @media (min-width: 840px) {
   #selected-companies .block-header {
     display: flex;

@@ -1,4 +1,12 @@
 /* Home blocks */
+
+#home {
+  margin-top: -3rem;
+  h3 {
+    margin-top: -1rem;
+  }
+}
+
 #selected-companies {
   .block-header {
     @include md-up {
