@@ -124,9 +124,9 @@ html {
   justify-content: center;
   padding-bottom: 0;
   padding-top: 4rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 840px) {
     #header .container {
-      padding-top: 6rem; } }
+      padding-top: 2rem; } }
   @media (min-width: 960px) {
     #header .container {
       justify-content: space-between;

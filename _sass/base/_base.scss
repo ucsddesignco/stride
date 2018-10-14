@@ -100,12 +100,11 @@ $text-illustration-gap: 3vw;
     justify-content: center;
     padding-bottom: 0;
     padding-top: 4rem;
-    @include sm-up {
-      padding-top: $block-top-bottom-space;
+    @include md-up {
+      padding-top: 2rem;
     }
     @include lg-up {
       justify-content: space-between;
-
       padding-bottom: $block-top-bottom-space;
       flex-direction: row;
     }
