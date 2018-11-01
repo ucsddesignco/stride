@@ -8,13 +8,22 @@ button {
   font-size: inherit;
   font-family: inherit;
   font-weight: 500;
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+  transition: background-color .3s;
   a {
     line-height: 0;
     margin: 0;
     padding: 0;
     white-space: nowrap;
+  }
+  &.bg-red {
+    @include hover {
+      background-color: lighten($burnt-sienna, 5%);
+    }
+  }
+  &.bg-dark-green {
+    @include hover {
+      background-color: lighten($lochinvar, 5%);
+    }
   }
 }

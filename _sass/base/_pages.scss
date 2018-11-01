@@ -9,6 +9,12 @@
   }
 }
 
+#companies {
+  button {
+    margin-top: 0.8rem;
+  }
+}
+
 #selected-companies {
   .block-header {
     @include md-up {
@@ -57,5 +63,53 @@
     @include xl-up {
       height: 20rem;
     }
+  }
+}
+
+#agenda {
+  margin-bottom: 3rem;
+}
+
+.agenda-block {
+  &:not(:first-child) {
+    .date {
+      margin-top: 6rem;
+      @include md-up {
+        margin-top: 0;
+      }
+    }
+  }
+  @include md-up {
+    display: grid;
+    grid-template-columns: 21rem 1fr;
+    &:not(:last-child) {
+      margin-bottom: 5.5rem;
+    }
+  }
+}
+
+.date {
+  h2 {
+    margin: 0;
+    font-weight: 400;
+  }
+  margin-bottom: 2rem;
+  @include md-up {
+    margin-bottom: 0;
+  }
+}
+
+.agenda-item {
+  @include md-up {
+    display: grid;
+  grid-template-columns: 26rem 1fr;
+  }
+  font-size: 2.4rem;
+  padding: 2.3rem 2.3rem 1.7rem;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .sub {
+    font-size: 2rem;
   }
 }

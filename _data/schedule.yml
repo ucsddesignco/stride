@@ -1,0 +1,20 @@
+- date: Monday, January 14
+  items:
+    - time: 6:30 PM - 8:30 PM
+      activity: Informational Session with COMPANY
+      color: green
+
+- date: Tuesday, January 15
+  items:
+      - time: 10:30 AM - 11:00 AM
+        activity: Doors Open
+        color: yellow
+      - time: 11:00 AM - 2:30 PM
+        activity: Portfolio Reviews
+        color: pink
+      - time: 2:30 PM - 4:00 PM
+        activity: General Info and Networking Sessions
+        color: pink
+      - time: 5:00 PM - 6:00 PM
+        activity: Informational Session with COMPANY
+        color: green

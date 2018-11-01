@@ -43,3 +43,23 @@ a {
   text-decoration: none;
   color: $mine-shaft;
 }
+
+.highlight {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: .5rem;
+    top: .6rem;
+    content: '';
+    width: 98%;
+    height: 1.3rem;
+    background-color: $buttermilk;
+    z-index: -999;
+    transition: opacity .3s;
+  }
+  @include hover {
+    &::after {
+      opacity: 0;
+    }
+  }
+}

@@ -272,6 +272,32 @@ nav a {
 nav button {
   margin: 0; }
 
+#cta .cta-container {
+  width: 100%;
+  max-width: 39rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem; }
+#cta h2 {
+  margin: 0; }
+#cta a {
+  width: 100%; }
+#cta p {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0; }
+
+.cta-button {
+  font-size: 4.8vw;
+  margin: 0;
+  height: 100%;
+  width: 100%; }
+  @media (min-width: 480px) {
+    .cta-button {
+      font-size: 2.8rem; } }
+
 @font-face {
   font-family: 'Sofia Pro';
   src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff");
@@ -323,11 +349,31 @@ a {
   text-decoration: none;
   color: #424242; }
 
+.highlight {
+  position: relative; }
+  .highlight::after {
+    position: absolute;
+    left: .5rem;
+    top: .6rem;
+    content: '';
+    width: 98%;
+    height: 1.3rem;
+    background-color: #FFECB3;
+    z-index: -999;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s; }
+  @media (hover: hover) {
+    .highlight:hover::after {
+      opacity: 0; } }
+
 .bg-red {
   background-color: #EF5350; }
 
 .bg-yellow {
   background-color: #FFECB3; }
+
+.bg-pink {
+  background-color: #FFDEDE; }
 
 .bg-dark-green {
   background-color: #2F8C7E; }
@@ -350,6 +396,9 @@ a {
 @media (min-width: 960px) {
   #home {
     margin-top: -3rem; } }
+
+#companies button {
+  margin-top: 0.8rem; }
 
 @media (min-width: 840px) {
   #selected-companies .block-header {
@@ -418,6 +467,46 @@ a {
       .task img {
         height: 20rem; } }
 
+#agenda {
+  margin-bottom: 3rem; }
+
+.agenda-block:not(:first-child) .date {
+  margin-top: 6rem; }
+  @media (min-width: 840px) {
+    .agenda-block:not(:first-child) .date {
+      margin-top: 0; } }
+@media (min-width: 840px) {
+  .agenda-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 21rem 1fr;
+        grid-template-columns: 21rem 1fr; }
+    .agenda-block:not(:last-child) {
+      margin-bottom: 5.5rem; } }
+
+.date {
+  margin-bottom: 2rem; }
+  .date h2 {
+    margin: 0;
+    font-weight: 400; }
+  @media (min-width: 840px) {
+    .date {
+      margin-bottom: 0; } }
+
+.agenda-item {
+  font-size: 2.4rem;
+  padding: 2.3rem 2.3rem 1.7rem; }
+  @media (min-width: 840px) {
+    .agenda-item {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 26rem 1fr;
+          grid-template-columns: 26rem 1fr; } }
+  .agenda-item:not(:last-child) {
+    margin-bottom: 2rem; }
+  .agenda-item .sub {
+    font-size: 2rem; }
+
 button {
   margin: 2rem 0;
   background-color: #EF5350;
@@ -427,14 +516,21 @@ button {
   border: none;
   font-size: inherit;
   font-family: inherit;
-  font-weight: 500; }
-  button:hover {
-    cursor: pointer; }
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
   button a {
     line-height: 0;
     margin: 0;
     padding: 0;
     white-space: nowrap; }
+  @media (hover: hover) {
+    button.bg-red:hover {
+      background-color: #f16a67; } }
+  @media (hover: hover) {
+    button.bg-dark-green:hover {
+      background-color: #359f8f; } }
 
 .card-container {
   margin-bottom: 4rem;

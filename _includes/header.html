@@ -2,15 +2,15 @@
 	<div class="container">
 
 		<header>
-			<a href="/" class='logo'><img src="assets/images/logo.svg" alt="Stride"></a>
+			<a href="/" class='logo'><img src="/assets/images/logo.svg" alt="Stride"></a>
 			<a href="/register" class="register-button"><button class="bg-red">Register Now</button></a>
 		</header>
 
 		<aside>
 				<nav>
 					<ul>
-						{% assign sorted_pages = site.pages | sort:"order" %}{% for node in sorted_pages %}{% if node.title %}{% if node.title != "Register Now" %}<li><a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>{% endif %}{% endif %}{% endfor %}
-						<a href="/register" class="register-button-lg"><button class="bg-red">Register Now</button></a>
+						{% assign sorted_pages = site.pages | sort:"order" %}{% for node in sorted_pages %}{% if node.title %}{% if node.title != "Register" %}<li><a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>{% endif %}{% endif %}{% endfor %}
+						<a href="/register" class="register-button-lg"><button class="bg-red">Register</button></a>
 					</ul>
 				</nav>
 		</aside>

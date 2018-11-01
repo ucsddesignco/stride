@@ -225,3 +225,34 @@ nav {
     margin: 0;
   }
 }
+
+#cta {
+  .cta-container {
+    width: 100%;
+    max-width: 39rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  h2 {
+    margin: 0;
+  }
+  a {
+    width: 100%;
+  }
+  p {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.cta-button {
+  font-size: 4.8vw;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  @include xs-up {
+    font-size: 2.8rem;
+  }
+}
