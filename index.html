@@ -1,5 +1,5 @@
 ---
-layout: default-no-cta
+layout: default
 title: Home
 permalink: /
 order: 1
@@ -11,8 +11,9 @@ order: 1
       <h1>Design-Centric Career Fair</h1>
       <h3>January 15th, 2019 <span class="dash">-</span> PC East Ballroom</h3>
       <p>The traditional career fair format doesn’t help students seeking design roles. Designers need a medium to showcase their work and experience. At Stride, students have the opportunity to showcase their projects and their portfolios versus handing off their resumes to recruiters.</p>
-      <!-- <a href="/about"><button class="bg-dark-green">Learn More</button></a> -->
-      <a target="_blank" href="https://goo.gl/forms/8HT3k62hElrIv2g32"><button class="bg-dark-green">Register Your Company</button></a>
+      <a href="/about"><button class="bg-dark-green">Learn More</button></a> 
+      <!--
+      <a target="_blank" href="https://goo.gl/forms/8HT3k62hElrIv2g32"><button class="bg-dark-green">Register Your Company</button></a>-->
     </div>
     <div class="illustration runner">
       <div id="bm"> </div>
@@ -20,7 +21,6 @@ order: 1
   </div>
 </div>
 
-<!--
 <div id="selected-companies" class="bg-yellow">
   <div class="container">
 
@@ -34,7 +34,7 @@ order: 1
         {% if company.selected %}
         <a class="card" href="{{ company.url }}" target="_blank">
           <div class="card-image">
-            <img src="{{ company.logo }}" alt="">
+            <img src="/assets/images/logos/{{ company.logo }}" alt="">
           </div>
           <div class="card-text">
             <h3>{{ company.name }}</h3>
@@ -44,9 +44,10 @@ order: 1
         {% endif %}
       {% endfor %}
     </div>
+
+    <p><br>Final company list TBD</p>
   </div>
 </div>
--->
 
 <!-- Scripts -->
 <script src="/assets/scripts/lottie.js"></script>
