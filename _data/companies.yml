@@ -8,8 +8,23 @@
   selected: true
   logo: servicenow.png
   url: https://www.servicenow.com/
-  description: ServiceNow makes work, work better for people. Their cloud-based platform and solutions deliver digital experiences that help people do their best work.
+  description: 'Imagine eliminating tasks and processes that make your workforce feel more like machines than people. We believe it’s time to change the way work gets done. In fact, ServiceNow was named #1 Forbes’ Most Innovative Company in 2018. We wouldn’t be able to achieve that milestone without applying the principles of design thinking to our business.'
 
+- name: American Specialty Health
+  logo: ash.svg
+  url: https://ashdesign.splashthat.com
+  description: American Specialty Health is seeking passionate and creative students looking to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us in our mission to empower individuals to live healthier and longer!
+
+- name: Roundfeather
+  logo: roundfeather.jpg
+  url: https://www.roundfeather.com/
+  description: We are a design and innovation consultancy that believes in understanding and addressing people's happiness as a starting point for innovation. Holistic consumer empathy lies at the core of our proprietary Design for Happiness™ approach which provides a platform for disruptive and business-driven design solutions.
+
+- name: Aira
+  logo: aira.png
+  url: http://aira.io/
+  description: Aira is a service that uses artificial intelligence and augmented reality to connect people to highly trained, remotely-located agents. At the touch of a button, Aira delivers instant access to information, enhancing everyday efficiency, engagement, and independence.
+  
 # - name: Sony
 #  selected: true
 #  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2000px-Sony_logo.svg.png
