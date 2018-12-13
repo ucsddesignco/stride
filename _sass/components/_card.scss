@@ -32,10 +32,13 @@
 }
 .card {
   background-color: #fff;
-  padding: 2.5rem 3.5rem;
+  padding: 2rem 3rem 1.5rem;
   transition: .3s;
   @include md-up {
-    padding: 3.5rem 4.5rem;
+    padding: 2.5rem 3.5rem 2rem;
+  }
+  @include xl-up {
+    //padding: 3.5rem 4.5rem;
   }
   @include hover {
     &:hover {

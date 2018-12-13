@@ -1,21 +1,43 @@
 - name: Intuit
-  selected: true
+  home: true
   logo: intuit.png
   url: https://www.intuit.com/
   description: Intuit's mission is powering prosperity around the world. Intuit builds intuitive web, mobile, and cloud solutions that generate more money, more time, and more confidence for approximately 50 million people.
 
 - name: ServiceNow
-  selected: true
+  home: true
   logo: servicenow.png
   url: https://www.servicenow.com/
   description: 'Imagine eliminating tasks and processes that make your workforce feel more like machines than people. We believe it’s time to change the way work gets done. In fact, ServiceNow was named #1 Forbes’ Most Innovative Company in 2018. We wouldn’t be able to achieve that milestone without applying the principles of design thinking to our business.'
+
+- name: Sony
+  home: true
+  logo: sony.png
+  url: https://www.sony.com/
+  description: Sony’s mission is simple. We aim to inspire and fulfill curiosity across the globe. We want to be responsible for getting hearts racing, stirring ambition, and putting a smile on the faces of our customers.
+
+- name: Oath
+  logo: oath.png
+  url: https://www.oath.com/
+  description: Oath is a​ dynamic house of media and technology brands that reaches over a billion people around the world.
+
+- name: AT&T
+  hide: true
+  logo: att.png
+  url: https://www.att.com/
+  description: 
+
+- name: Mitchell International
+  logo: mitchell.png
+  url: http://www.mitchell.com/
+  description: Mitchell’s solutions provide an expert level of decision support and connectivity within the claims organization and with industry partners to achieve optimal outcomes.
 
 - name: American Specialty Health
   logo: ash.svg
   url: https://ashdesign.splashthat.com
   description: American Specialty Health is seeking passionate and creative students looking to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us in our mission to empower individuals to live healthier and longer!
 
-- name: Roundfeather
+- name: Round Feather
   logo: roundfeather.jpg
   url: https://www.roundfeather.com/
   description: We are a design and innovation consultancy that believes in understanding and addressing people's happiness as a starting point for innovation. Holistic consumer empathy lies at the core of our proprietary Design for Happiness™ approach which provides a platform for disruptive and business-driven design solutions.
@@ -24,10 +46,27 @@
   logo: aira.png
   url: http://aira.io/
   description: Aira is a service that uses artificial intelligence and augmented reality to connect people to highly trained, remotely-located agents. At the touch of a button, Aira delivers instant access to information, enhancing everyday efficiency, engagement, and independence.
+
+- name: Nanome
+  logo: nanome.png
+  url: https://nanome.ai/
+  description: Nanome is transforming how we interact with and understand science, creating a virtual world where users can experiment, design and learn at the nanoscale.
+
+- name: Red Door Interactive
+  hide: true
+  logo: 
+  url:
+  description: 
+
+- name: Seismic Software
+  hide: true
+  logo: 
+  url:
+  description: 
   
-# - name: Sony
-#  selected: true
-#  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2000px-Sony_logo.svg.png
-#  url: https://www.sony.com/
-#  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra tempor nibh in facilisis. Morbi nisl magna, maximus vitae rutrum a, tincidunt eu nisl.
+- name: Learning Equality
+  hide: true
+  logo: 
+  url:
+  description: 
   

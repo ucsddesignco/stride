@@ -28,15 +28,11 @@ order: 4
 
     <div class="card-container green">
       {% for company in site.data.companies %}
-        <a class="card" href="{{ company.url }}" target="_blank">
-          <div class="card-image">
-            <img src="/assets/images/logos/{{ company.logo }}" alt="">
-          </div>
-          <div class="card-text">
-            <h3>{{ company.name }}</h3>
-            <p>{{ company.description }}</p>
-          </div>
-        </a>
+        {% if company.hide != true %}
+
+          {% include company-card.html %}
+          
+        {% endif %}
       {% endfor %}
     </div>
 
