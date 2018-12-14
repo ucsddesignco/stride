@@ -7,7 +7,7 @@ html {
     font-size: 62.5%;
   }
   @include xxl-up {
-    font-size: 0.7vw;
+    //font-size: 0.7vw;
   }
 }
 
@@ -25,6 +25,9 @@ html {
   }
   @include xl-up {
     padding: $block-top-bottom-space $side-space-xl;
+  }
+  @include xxl-up {
+    max-width: 128rem;
   }
 }
 
