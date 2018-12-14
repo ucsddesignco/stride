@@ -65,8 +65,7 @@
   description: 
   
 - name: Learning Equality
-  hide: true
-  logo: 
-  url:
-  description: 
+  logo: learning-equality.svg
+  url: https://learningequality.org/
+  description: Learning Equality is a UCSD-based edtech nonprofit dedicated to providing equitable access to quality education for every person in the world. We enable offline use of open, digital educational resources and create tools and resources to support innovative pedagogy. We design for both in and out-of-school, refugee, and other learning contexts.
   
