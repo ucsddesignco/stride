@@ -391,6 +391,8 @@ a {
   color: #2F8C7E; }
 
 /* Home blocks */
+#home h1 {
+  white-space: nowrap; }
 #home h3 {
   margin-top: -1rem; }
 @media (min-width: 960px) {

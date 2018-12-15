@@ -122,12 +122,41 @@
         <h2>Interested?</h2>
         <p>We'd love to have you.</p>
       </div>
-      <a href="https://stridestudentreg.eventbrite.com" target="_blank"><button class="bg-red cta-button">Register</button></a>
+      <a href="https://stridestudentreg.eventbrite.com" target="_blank" class="registration-link"><button class="bg-red cta-button">Register</button></a>
     </div>
     
   </div>
 </div>
 
+<!--
+<script>
+  const cta = document.querySelector('.cta-button');
+  cta.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    setTimeout(goToRegistration, 1000);
+
+    // Keeps track of whether or not the form has been submitted.
+    // This prevents the form from being submitted twice in cases
+    // where `hitCallback` fires normally.
+    let registration = false;
+
+    function goToRegistration() {
+      if (!registration) {
+        registration = true;
+        document.querySelector('.registration-link').click();
+      }
+    }
+
+    // Sends the event to Google Analytics and
+    // resubmits the form once the hit is done.
+    ga('send', 'event', 'Register from CTA', 'click', {
+      hitCallback: goToRegistration
+    });
+  });
+</script>
+-->
 			</article>
 		</main>
 	</div>
