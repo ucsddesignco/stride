@@ -11,7 +11,6 @@
   }
   @include xl-up {
     grid-template-columns: 1fr 1fr 1fr;
-
   }
   &.yellow {
     .card {
@@ -31,9 +30,10 @@
   }
 }
 .card {
+  cursor: pointer;
   background-color: #fff;
   padding: 2rem 3rem 1.5rem;
-  transition: .3s;
+  transition: 0.3s;
   @include md-up {
     padding: 2.5rem 3.5rem 2rem;
   }
@@ -72,6 +72,9 @@
 .card-text {
   p {
     font-size: 1.6rem;
-    line-height: 2.5rem;
+    line-height: 2.3rem;
+    @include xs-up {
+      line-height: 2.5rem;
+    }
   }
 }

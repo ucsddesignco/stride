@@ -1,17 +1,21 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   color: $mine-shaft;
   font-weight: 400;
   font-size: $font-size-body;
-  line-height: $line-height-body;
+  line-height: 2.8rem;
+  @include xs-up {
+    line-height: $line-height-body;
+  }
 }
 
 h1 {
   color: $burnt-sienna;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 1.8rem 0;
   font-weight: 600;
   font-size: 3.4rem;
@@ -23,6 +27,12 @@ h3 {
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 3.4rem;
+}
+
+h4 {
+  font-weight: 500;
+  //font-size: 2rem;
+  //line-height: 2.9rem;
 }
 
 .card {
@@ -48,14 +58,14 @@ a {
   position: relative;
   &::after {
     position: absolute;
-    left: .5rem;
-    top: .6rem;
-    content: '';
+    left: 0.5rem;
+    top: 0.6rem;
+    content: "";
     width: 98%;
     height: 1.3rem;
     background-color: $buttermilk;
     z-index: -999;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
   }
   @include hover {
     &::after {
