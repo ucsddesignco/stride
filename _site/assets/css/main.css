@@ -625,8 +625,6 @@ button {
   display: none; }
   .modal-overlay h3 {
     color: #fff; }
-  .modal-overlay h4 {
-    margin-top: 2.5rem; }
   .modal-overlay a {
     color: #2F8C7E; }
   .modal-overlay a,
@@ -686,10 +684,14 @@ button {
       margin-top: 0.3rem; } }
 
 .modal-text {
-  padding: 2rem 3rem;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem; }
+  padding: 2rem 3rem; }
   @media (min-width: 840px) {
     .modal-text {
       padding: 2rem 4rem; } }
+  @media (min-width: 840px) {
+    .modal-text {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 2fr 1fr;
+          grid-template-columns: 2fr 1fr;
+      grid-gap: 6rem; } }

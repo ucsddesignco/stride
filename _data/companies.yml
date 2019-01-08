@@ -3,12 +3,14 @@
   logo: intuit.png
   url: https://www.intuit.com/
   description: Intuit's mission is powering prosperity around the world with products like TurboTax, QuickBooks and Mint. Love simplifying the complex? Join our world class design team to solve tough problems in creative and bold ways.
+  visa: TBD
 
 - name: ServiceNow
   home: true
   logo: servicenow.png
   url: https://www.servicenow.com/
   description: "Imagine eliminating tasks and processes that make your workforce feel more like machines than people. We believe it’s time to change the way work gets done. In fact, ServiceNow was named #1 Forbes’ Most Innovative Company in 2018. We wouldn’t be able to achieve that milestone without applying the principles of design thinking to our business."
+  visa: "No"
   roles:
     - title: Product Design Intern
       link: https://jobs.jobvite.com/careers/servicenow/job/oKuz8fwF?__jvst=Job%20Board&__jvsd=UCSD
@@ -20,6 +22,7 @@
   logo: sony.png
   url: https://www.sony.com/
   description: Sony’s mission is simple. We aim to inspire and fulfill curiosity across the globe. We want to be responsible for getting hearts racing, stirring ambition, and putting a smile on the faces of our customers.
+  visa: "Yes"
   roles:
     - title: Human Factors Engineering & Interaction Design Intern
       link: https://drive.google.com/open?id=0B5n1fj_TjnVOSHVsaURvNGtBSjNxa1RiWDNnb1ZKaFduMjFR
@@ -28,6 +31,7 @@
   logo: oath.png
   url: https://www.oath.com/
   description: Passionate in creating intuitive and engaging digital products with a modern, balanced, clean and concise design sense. Design culture is to deliver brands that people love with a mobile-first mentality.
+  visa: "Yes"
   roles:
     - title: Associate Product Designer (New Grad)
       link: https://drive.google.com/open?id=0B5n1fj_TjnVOVXlOM0dRdzdKQzctYmpGNnpPMlBCcEtmdWQ0
@@ -42,11 +46,13 @@
   logo: mitchell.png
   url: http://www.mitchell.com/
   description: Mitchell’s solutions provide an expert level of decision support and connectivity within the claims organization and with industry partners to achieve optimal outcomes.
+  visa: TBD
 
 - name: American Specialty Health
   logo: ash.svg
   url: https://ashdesign.splashthat.com
   description: ASH’s mission is to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us as we empower individuals to live healthier and longer!
+  visa: "Yes"
   roles:
     - title: Design Internships
 
@@ -54,6 +60,7 @@
   logo: roundfeather.jpg
   url: https://www.roundfeather.com/
   description: We are a management consulting firm that believes innovation starts with understanding and addressing people's happiness. Emotion-driven, human-centric design lies at the core of our proprietary Design for Happiness™ approach which focuses on uncovering the unarticulated needs of a person when they use a product or service. Using insights gained from our research, we identify ways to reconcile the emotional dilemmas people face when making decisions. Using our methodology, we help our clients identify new ways to approach products, services, and branding that captures new customers and inspires loyalty with existing customers.
+  visa: "No"
   roles:
     - title: Design Research Intern
       link: https://drive.google.com/file/d/0B5n1fj_TjnVOdG0xaGFKc1NhS2E4amhLWFNXZHF5WVZGTFJR/view?usp=sharing
@@ -64,6 +71,7 @@
   logo: aira.png
   url: http://aira.io/
   description: Aira is a service that uses artificial intelligence and augmented reality to connect people to highly trained, remotely-located agents. At the touch of a button, Aira delivers instant access to information, enhancing everyday efficiency, engagement, and independence.
+  visa: "If candidate is exceptional"
   roles:
     - title: Product Designer
 
@@ -71,16 +79,19 @@
   logo: nanome.png
   url: https://nanome.ai/
   description: Nanome is transforming how we interact with and understand science, creating a virtual world where users can experiment, design and learn at the nanoscale.
+  visa: TBD
 
 - name: Seismic Software
   logo: seismic.png
   url: https://seismic.com/
   description: Seismic is San Diego’s most valuable software startup, recently reaching unicorn status. We believe that behind every great brand is an epic story. We go above and beyond to help our customers unite around what makes them great, share it with those who matter most, and shine above the competition. We know that our customers need us to be at the top of our game so that they can be at the top of theirs.
+  visa: "No"
 
 - name: Learning Equality
   logo: learning-equality.svg
   url: https://learningequality.org/
   description: Learning Equality is a UCSD-based edtech nonprofit dedicated to providing equitable access to quality education for every person in the world. We enable offline use of open, digital educational resources and create tools and resources to support innovative pedagogy. We design for both in and out-of-school, refugee, and other learning contexts.
+  visa: TBD
   roles:
     - title: Front-End Development Intern
 
@@ -88,6 +99,7 @@
   logo: visa.svg
   url: https://design.visa.com/
   description: Visa Inc. is the world’s leader in digital payments. Their mission is to connect the world through the most innovative, reliable and secure payment network - enabling individuals, businesses and economies to thrive.
+  visa: Graduate students only
   roles:
     - title: UX Designer, New Grad
       link: https://drive.google.com/open?id=0B5n1fj_TjnVOVXlOM0dRdzdKQzctYmpGNnpPMlBCcEtmdWQ0

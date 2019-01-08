@@ -10,7 +10,7 @@
     color: #fff;
   }
   h4 {
-    margin-top: 2.5rem;
+    //margin-top: 2.5rem;
   }
   a {
     //color: $burnt-sienna;
@@ -76,11 +76,10 @@
     padding: 2rem 4rem;
   }
   @extend .card-text;
-  //display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  .about {
-  }
-  .info {
+
+  @include md-up {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 6rem;
   }
 }

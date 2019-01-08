@@ -18,21 +18,30 @@
         <div class="close-modal-btn">✕</div>
       </div>
 
-      <div class="modal-text">
-        <div class="info">
+      <div class="modal-text {% if company.roles %}two-col{% endif %}">
+        <div class="about">
           <p>
             {{ company.description }}
             <a href="{{ company.url }}" target="_blank">Learn more</a>
           </p>
+        </div>
+        <div class="info">
           {% if company.roles %}
-          <h4>Open Roles</h4>
-          {% for role in company.roles %}
-          <p>
-            {% if role.link %}<a href="{{ role.link }}" target="_blank"
-              >{% endif %}{{ role.title }}{% if role.link %}</a
-            >{% endif %}
-          </p>
-          {% endfor %} {% endif %}
+          <div>
+            <h4>Open Roles</h4>
+            {% for role in company.roles %}
+            <p>
+              {% if role.link %}<a href="{{ role.link }}" target="_blank"
+                >{% endif %}{{ role.title }}{% if role.link %}</a
+              >{% endif %}
+            </p>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <div>
+            <h4>Visa Sponsorship</h4>
+            <p>{{ company.visa }}</p>
+          </div>
         </div>
       </div>
       <!-- /.modal-text -->
