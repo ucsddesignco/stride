@@ -71,6 +71,12 @@
 
 #agenda {
   margin-bottom: 3rem;
+  a {
+    transition: opacity 0.3s;
+    @include hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .agenda-block {
@@ -105,9 +111,10 @@
 .agenda-item {
   @include md-up {
     display: grid;
-  grid-template-columns: 26rem 1fr;
+    grid-template-columns: 12rem 3fr 2fr;
+    grid-gap: 4rem;
   }
-  font-size: 2.4rem;
+  //font-size: 2.4rem;
   padding: 2.3rem 2.3rem 1.7rem;
   &:not(:last-child) {
     margin-bottom: 2rem;

@@ -31,11 +31,13 @@
 }
 .card {
   cursor: pointer;
+  position: relative;
   background-color: #fff;
-  padding: 2rem 3rem 1.5rem;
+  padding: 2rem 3rem;
   transition: 0.3s;
+  height: 14rem;
   @include md-up {
-    padding: 2.5rem 3.5rem 2rem;
+    padding: 2.5rem 3.5rem;
   }
   @include xl-up {
     //padding: 3.5rem 4.5rem;
@@ -47,8 +49,23 @@
   }
 }
 
+.card-flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.plus {
+  opacity: 0.2;
+  font-size: 3rem;
+  text-align: right;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
 .card-image {
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -57,15 +74,9 @@
     height: 15rem;
   }
   img {
-    padding: 3rem;
-    //max-width: 100%;
+    padding: 0 3rem 0rem;
     max-height: 100%;
-    //width: 70%;
-    max-width: 70%;
-    @include md-up {
-      width: auto;
-      max-width: 70%;
-    }
+    width: 70%;
   }
 }
 

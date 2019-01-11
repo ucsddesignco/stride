@@ -4,6 +4,9 @@
   url: https://www.intuit.com/
   description: Intuit's mission is powering prosperity around the world with products like TurboTax, QuickBooks and Mint. Love simplifying the complex? Join our world class design team to solve tough problems in creative and bold ways.
   visa: TBD
+  roles:
+    - title: Product Design Intern
+      link: https://careers.intuit.com/job-category/21/university/job/2019-8400/product-design-intern-san-diego
 
 - name: ServiceNow
   home: true
@@ -54,7 +57,8 @@
   description: ASH’s mission is to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us as we empower individuals to live healthier and longer!
   visa: "Yes"
   roles:
-    - title: Design Internships
+    - title: UX Design Intern
+      link: https://www.ashcompanies.com/Careers/JobDescription?jobCode=18-0915-2
 
 - name: Round Feather
   logo: roundfeather.jpg

@@ -1,20 +1,23 @@
 - date: Monday, January 14
   items:
-    - time: 6:30 PM - 8:30 PM
-      activity: Informational Session with COMPANY
+    - time: 5:00 PM
+      activity: <a href='https://www.facebook.com/events/273839346646022/' target='_blank'>Intuit Info/Networking Session →</a>
       color: green
+      location: Qualcomm Room, JSOE
+    - time: 6:45 PM
+      activity: <a href='https://www.facebook.com/events/654807774937759/' target='_blank'>ServiceNow Info/Networking Session →</a>
+      color: green
+      location: Qualcomm Room, JSOE
 
 - date: Tuesday, January 15
   items:
-      - time: 10:30 AM - 11:00 AM
-        activity: Doors Open
-        color: yellow
-      - time: 11:00 AM - 2:30 PM
-        activity: Portfolio Reviews
-        color: pink
-      - time: 2:30 PM - 4:00 PM
-        activity: General Info and Networking Sessions
-        color: pink
-      - time: 5:00 PM - 6:00 PM
-        activity: Informational Session with COMPANY
-        color: green
+    - time: 12:00 PM
+      activity: Doors Open
+      color: yellow
+      location: PC East Ballroom
+    - time: 3:45 PM
+      activity: Doors Close
+      color: pink
+    - time: 4:00 PM
+      activity: Stride Ends
+      color: pink
