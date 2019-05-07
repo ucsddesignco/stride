@@ -1,27 +1,36 @@
 <div id="header">
-	<noscript>
-		<div class="container">
-			<h3>Enable Javascript in your browser for a better experience.</h3>
-		</div>
-	</noscript>
+  <noscript>
+    <div class="container">
+      <h3>Enable Javascript in your browser for a better experience.</h3>
+    </div>
+  </noscript>
 
-	<div class="container">
+  <div class="container">
+    <header>
+      <a href="/" class="logo"
+        ><img src="/assets/images/logo.svg" alt="Stride"
+      /></a>
+      <a
+        href="mailto:designatucsd@gmail.com"
+        target="_blank"
+        class="register-button"
+        ><button class="bg-red">Contact</button></a
+      >
+    </header>
 
-		<header>
-			<a href="/" class='logo'><img src="/assets/images/logo.svg" alt="Stride"></a>
-			<a href="https://stridestudentreg.eventbrite.com" target="_blank" class="register-button"><button class="bg-red">Register</button></a>
-		</header>
-
-		<aside>
-				<nav>
-					<ul>
-						{% assign sorted_pages = site.pages | sort:"order" %}{% for node in sorted_pages %}{% if node.title %}{% if node.title != "Register" %}<li><a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>{% endif %}{% endif %}{% endfor %}
-						<a href="https://stridestudentreg.eventbrite.com" target="_blank" class="register-button-lg"><button class="bg-red">Register</button></a>
-					</ul>
-				</nav>
-		</aside>
-
-
-
-	</div>
+    <aside>
+      <nav>
+        <ul>
+          <!--
+						{% assign sorted_pages = site.pages | sort:"order" %}{% for node in sorted_pages %}{% if node.title %}{% if node.title != "Register" %}<li><a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>{% endif %}{% endif %}{% endfor %} -->
+          <a
+            href="mailto:designatucsd@gmail.com"
+            target="_blank"
+            class="register-button-lg"
+            ><button class="bg-red">Contact</button></a
+          >
+        </ul>
+      </nav>
+    </aside>
+  </div>
 </div>
