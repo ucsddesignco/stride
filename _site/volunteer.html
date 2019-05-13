@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lange="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -37,10 +37,10 @@
 
 	<!--  CSS -->
 	<link rel="stylesheet" href="/assets/css/main.css">
-	<link rel="canonical" href="https://stride.designatucsd.org/404.html">
+	<link rel="canonical" href="https://stride.designatucsd.org/volunteer">
 
 	<title>
-		
+		Volunteer | Stride
 	</title>
 </head>
 
@@ -64,7 +64,7 @@
 		<aside>
 				<nav>
 					<ul>
-						<li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/companies">Companies</a></li><li><a href="/schedule">Schedule</a></li><li><a href="/volunteer">Volunteer</a></li>
+						<li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/companies">Companies</a></li><li><a href="/schedule">Schedule</a></li><li><a class="active"href="/volunteer">Volunteer</a></li>
 						<a href="https://stridestudentreg.eventbrite.com" target="_blank" class="register-button-lg"><button class="bg-red">Register</button></a>
 					</ul>
 				</nav>
@@ -77,13 +77,74 @@
 
 		<main>
 			<article>
-				<h1></h1>
+				<noscript>
+  <div id="volunteer">
+    <div class="container container-2-col">
+      <div class="text">
+        <h1>Volunteer at Stride</h1>
+        <p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdt6VVZd8dBxQUQNK8Qp9sDTrAkV_RRuVAs_fLFfRIeyqJKxA/viewform"
+            target="_blank"
+            >Stride Volunteer Sign Up Form →</a
+          >
+        </p>
+      </div>
+      <div class="illustration">
+        <img src="/assets/images/register.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</noscript>
+<script>
+  window.location.replace(
+    "https://docs.google.com/forms/d/e/1FAIpQLSdt6VVZd8dBxQUQNK8Qp9sDTrAkV_RRuVAs_fLFfRIeyqJKxA/viewform"
+  );
+</script>
 
-<div class="container">
-  <h1>Oops! This page does not exist.</h1>
+				<div id="cta" class="bg-gray">
+  <div class="container">
 
+    <div class="cta-container">
+      <div class="text">
+        <h2>Interested?</h2>
+        <p>We'd love to have you.</p>
+      </div>
+      <a href="https://stridestudentreg.eventbrite.com" target="_blank" class="registration-link"><button class="bg-red cta-button">Register</button></a>
+    </div>
+    
+  </div>
 </div>
 
+<!--
+<script>
+  const cta = document.querySelector('.cta-button');
+  cta.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    setTimeout(goToRegistration, 1000);
+
+    // Keeps track of whether or not the form has been submitted.
+    // This prevents the form from being submitted twice in cases
+    // where `hitCallback` fires normally.
+    let registration = false;
+
+    function goToRegistration() {
+      if (!registration) {
+        registration = true;
+        document.querySelector('.registration-link').click();
+      }
+    }
+
+    // Sends the event to Google Analytics and
+    // resubmits the form once the hit is done.
+    ga('send', 'event', 'Register from CTA', 'click', {
+      hitCallback: goToRegistration
+    });
+  });
+</script>
+-->
 			</article>
 		</main>
 	</div>
