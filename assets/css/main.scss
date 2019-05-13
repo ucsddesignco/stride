@@ -4,24 +4,14 @@
 @charset 'UTF-8';
 
 // Configuration + helpers
-@import
-  'abstracts/variables',
-  'abstracts/mixins';
+@import "abstracts/variables", "abstracts/mixins";
 
 // Vendor
-@import
-  'vendor/reset';
+@import "vendor/reset", "vendor/csswizardry-grids";
 
 // Base
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers',
-  'base/pages';
+@import "base/base", "base/fonts", "base/typography", "base/helpers",
+  "base/pages";
 
 // Components
-@import
-  'components/button',
-  'components/card',
-  'components/modal';
+@import "components/button", "components/card", "components/modal";

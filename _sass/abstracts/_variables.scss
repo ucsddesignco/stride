@@ -1,29 +1,19 @@
-// Media breakpoints
-$xs-screen: 480px;
-$sm-screen: 600px;
-$md-screen: 840px;
-$lg-screen: 960px;
-$xl-screen: 1280px;
-//$xl-screen: 1024px;
-$xxl-screen: 1440px;
-
 // Color palette
-$burnt-sienna: #EF5350; // Red
+$burnt-sienna: #ef5350; // Red
 $mine-shaft: #424242; // Black
-$monte-carlo: #80CBC4; // Green
-$lochinvar: #2F8C7E; // Dark Green
-$aqua-squeeze: #E0F2F1; // Light green
-$buttermilk: #FFECB3; // Yellow
-$chardonnay: #FFCC80; // Dark yellow
-$wild-sand: #F6F6F6; // Light gray
+$monte-carlo: #80cbc4; // Green
+$lochinvar: #2f8c7e; // Dark Green
+$aqua-squeeze: #e0f2f1; // Light green
+$buttermilk: #ffecb3; // Yellow
+$chardonnay: #ffcc80; // Dark yellow
+$wild-sand: #f6f6f6; // Light gray
 
-// Content
-$block-top-bottom-space: 6rem;
-$top-bottom-space: 4rem;
-$side-space-xs: 7vw;
-$side-space-xl: 14rem;
-$footer-height: 10rem;
+$spacer-1: 1.5rem;
+$spacer-2: 3rem;
+$spacer-3: 6rem;
+$spacer-4: 9rem;
 
-// Typography
-$font-size-body: 1.8rem;
-$line-height-body: 3rem;
+$body-font-size: 1.4rem;
+
+$footer-height-palm: calc(#{$spacer-2 + $body-font-size});
+$footer-height: calc(#{$spacer-3 + $body-font-size});

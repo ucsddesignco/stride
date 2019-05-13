@@ -15,8 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: Stride
 email: designatucsd@gmail.com
-description: Design-Centric Career Fair
+description: Stride is a design-centric career fair hosted by Design at UCSD on January 15th, 2019 at PC East Ballroom.
+signup: "https://stridestudentreg.eventbrite.com"
 baseurl: "" # the subpath of your site, e.g. /blog
+base: "/"
 url: "https://stride.designatucsd.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: designatucsd
 
@@ -24,12 +26,12 @@ github_username: designatucsd
 markdown: kramdown
 plugins:
   - jekyll-autoprefixer
+  - jekyll-babel
 sass:
   sass_dir: _sass
-include: ['_pages']
+include: ["_pages"]
 kramdown:
   input: GFM
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

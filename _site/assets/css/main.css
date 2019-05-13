@@ -1,725 +1,479 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {
-  line-height: 1; }
+body { line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-blockquote, q {
-  quotes: none; }
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-html {
-  padding: 0;
-  margin: 0;
-  font-size: 50%;
-  position: relative; }
-  @media (min-width: 600px) {
-    html {
-      font-size: 62.5%; } }
+/*------------------------------------*\ $CSSWIZARDRY-GRIDS
+\*------------------------------------*/
+/** CONTENTS INTRODUCTION.........How the grid system works. VARIABLES............Your settings. MIXINS...............Library mixins. GRID SETUP...........Build the grid structure. WIDTHS...............Build our responsive widths around our breakpoints. PUSH.................Push classes. PULL.................Pull classes. */
+/*------------------------------------*\ $INTRODUCTION
+\*------------------------------------*/
+/** csswizardry grids provides you with widths to suit a number of breakpoints designed around devices of a size you specify. Out of the box, csswizardry grids caters to the following types of device:  palm     --  palm-based devices, like phones and small tablets lap      --  lap-based devices, like iPads or laptops portable --  all of the above desk     --  stationary devices, like desktop computers regular  --  any/all types of device  These namespaces are then used in the library to give you the ability to manipulate your layouts based around them, for example:  <div class="grid__item  one-whole  lap--one-half  desk--one-third">  This would give you a grid item which is 100% width unless it is on a lap device, at which point it become 50% wide, or it is on a desktop device, at which point it becomes 33.333% width.  csswizardry grids also has push and pull classes which allow you to nudge grid items left and right by a defined amount. These follow the same naming convention as above, but are prepended by either `push--` or `pull--`, for example:  `class="grid__item  one-half  push--one-half"`  This would give you a grid item which is 50% width and pushed over to the right by 50%.  All classes in csswizardry grids follow this patten, so you should fairly quickly be able to piece together any combinations you can imagine, for example:  `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`  `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`  `class="grid__item  palm--one-third  desk--five-twelfths"` */
+/*------------------------------------*\ $VARIABLES
+\*------------------------------------*/
+/** If you are building a non-responsive site but would still like to use csswizardry-grids, set this to ‘false’: */
+/** Is this build mobile first? Setting to ‘true’ means that all grids will be 100% width if you do not apply a more specific class to them. */
+/** Set the spacing between your grid items. */
+/** Would you like Sass’ silent classes, or regular CSS classes? */
+/** Would you like push and pull classes enabled? */
+/** Using `inline-block` means that the grid items need their whitespace removing in order for them to work correctly. Set the following to true if you are going to achieve this by manually removing/commenting out any whitespace in your HTML yourself.  Setting this to false invokes a hack which cannot always be guaranteed, please see the following for more detail:  github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688 github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371 */
+/** Define your breakpoints. The first value is the prefix that shall be used for your classes (e.g. `.palm--one-half`), the second value is the media query that the breakpoint fires at. */
+/** Define which namespaced breakpoints you would like to generate for each of widths, push and pull. This is handy if you only need pull on, say, desk, or you only need a new width breakpoint at mobile sizes. It allows you to only compile as much CSS as you need. All are turned on by default, but you can add and remove breakpoints at will.  Push and pull shall only be used if `$push` and/or `$pull` and `$responsive` have been set to ‘true’. */
+/** You do not need to edit anything from this line onward; csswizardry-grids is good to go. Happy griddin’! */
+/*------------------------------------*\ $MIXINS \*------------------------------------*/
+/** These mixins are for the library to use only, you should not need to modify them at all.  Enclose a block of code with a media query as named in `$breakpoints`. */
+/** Drop relative positioning into silent classes which can’t take advantage of the `[class*="push--"]` and `[class*="pull--"]` selectors. */
+/*------------------------------------*\ $GRID SETUP \*------------------------------------*/
+/** 1. Allow the grid system to be used on lists. 2. Remove any margins and paddings that might affect the grid system. 3. Apply a negative `margin-left` to negate the columns’ gutters. */
+.grid { list-style: none; /* [1] */ margin: 0; /* [2] */ padding: 0; /* [2] */ margin-left: -6rem; /* [3] */ letter-spacing: -0.31em; }
+@media only screen and (max-width: 1023px) { .grid { margin-left: -3rem; } }
 
-.body-wrapper {
-  height: 100%;
-  min-height: calc(100vh - 10rem - 4rem); }
+/* Opera hack */
+.opera:-o-prefocus, .grid { word-spacing: -0.43em; }
 
-.container, .modal-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4rem 7vw; }
-  @media (min-width: 600px) {
-    .container, .modal-container {
-      padding: 6rem 7vw; } }
-  @media (min-width: 1280px) {
-    .container, .modal-container {
-      padding: 6rem 14rem; } }
-  @media (min-width: 1440px) {
-    .container, .modal-container {
-      max-width: 128rem; } }
+/** 1. Cause columns to stack side-by-side. 2. Space columns apart. 3. Align columns to the tops of each other. 4. Full-width unless told to behave otherwise. 5. Required to combine fluid widths and fixed gutters. */
+.grid__item { display: inline-block; /* [1] */ padding-left: 6rem; /* [2] */ vertical-align: top; /* [3] */ width: 100%; /* [4] */ /* [5] */ /* [5] */ box-sizing: border-box; /* [5] */ letter-spacing: normal; word-spacing: normal; }
+@media only screen and (max-width: 1023px) { .grid__item { padding-left: 3rem; } }
 
-@media (min-width: 840px) {
-  .container-2-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .container-2-col .text,
-    .container-2-col .illustration {
-      width: 50%; }
-    .container-2-col:not(.reverse) .text {
-      padding-right: 3vw; }
-    .container-2-col:not(.reverse) .illustration {
-      padding-left: 3vw; }
-    .container-2-col.reverse {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
-      .container-2-col.reverse .text {
-        padding-left: 3vw; }
-      .container-2-col.reverse .illustration {
-        padding-right: 3vw; } }
+/** Reversed grids allow you to structure your source in the opposite order to how your rendered layout will appear. Extends `.grid`. */
+.grid--rev { direction: rtl; text-align: left; }
+.grid--rev > .grid__item { direction: ltr; text-align: left; }
 
-.illustration {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  text-align: center; }
-  .illustration img,
-  .illustration svg {
-    margin-top: 3rem;
-    width: 80% !important; }
-    @media (min-width: 480px) {
-      .illustration img,
-      .illustration svg {
-        width: 50% !important; } }
-    @media (min-width: 840px) {
-      .illustration img,
-      .illustration svg {
-        margin-top: 0;
-        max-height: 50rem !important;
-        width: 100% !important; } }
+/** Gutterless grids have all the properties of regular grids, minus any spacing. Extends `.grid`. */
+.grid--full { margin-left: 0; }
+.grid--full > .grid__item { padding-left: 0; }
 
-.block-header {
-  margin-bottom: 3rem; }
+/** Align the entire grid to the right. Extends `.grid`. */
+.grid--right { text-align: right; }
+.grid--right > .grid__item { text-align: left; }
 
-#header,
-#footer {
-  font-weight: 500; }
-  @media (min-width: 960px) {
-    #header .container, #header .modal-container,
-    #footer .container,
-    #footer .modal-container {
-      padding: 0 8rem; } }
+/** Centered grids align grid items centrally without needing to use push or pull classes. Extends `.grid`. */
+.grid--center { text-align: center; }
+.grid--center > .grid__item { text-align: left; }
 
-@media (min-width: 840px) {
-  #header {
-    margin-top: 4rem; } }
-#header .container, #header .modal-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 0;
-  padding-top: 4rem; }
-  @media (min-width: 840px) {
-    #header .container, #header .modal-container {
-      padding-top: 0; } }
-  @media (min-width: 960px) {
-    #header .container, #header .modal-container {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding-bottom: 3rem;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+/** Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends `.grid`. */
+.grid--middle > .grid__item { vertical-align: middle; }
 
-.register-button {
-  font-size: 1.5rem; }
-  .register-button button {
-    padding: 1.8rem 1.5rem 1.5rem;
-    margin: 0; }
-  @media (min-width: 960px) {
-    .register-button {
-      display: none; } }
+.grid--bottom > .grid__item { vertical-align: bottom; }
 
-.register-button-lg {
-  display: none; }
-  @media (min-width: 960px) {
-    .register-button-lg {
-      display: inline-block; } }
+/** Create grids with narrower gutters. Extends `.grid`. */
+.grid--narrow { margin-left: -3rem; }
+.grid--narrow > .grid__item { padding-left: 3rem; }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem; }
-  header a {
-    margin: 0 0.8rem; }
-  @media (min-width: 960px) {
-    header {
-      margin-bottom: 0; } }
+/** Create grids with wider gutters. Extends `.grid`. */
+.grid--wide { margin-left: -12rem; }
+.grid--wide > .grid__item { padding-left: 12rem; }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .logo img {
-    height: 2.8rem; }
-    @media (min-width: 840px) {
-      .logo img {
-        height: 2.5rem; } }
+/*------------------------------------*\ $WIDTHS \*------------------------------------*/
+/** Create our width classes, prefixed by the specified namespace. */
+/** Our regular, non-responsive width classes. */
+/** Whole */
+.one-whole { width: 100%; }
 
-#footer .container, #footer .modal-container {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  height: 10rem;
-  text-align: center;
-  line-height: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media (min-width: 840px) {
-    #footer .container, #footer .modal-container {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+/** Halves */
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths { width: 50%; }
 
-.copyright {
-  margin-bottom: 2rem; }
-  @media (min-width: 840px) {
-    .copyright {
-      margin-bottom: 0; } }
+/** Thirds */
+.one-third, .two-sixths, .four-twelfths { width: 33.333%; }
 
-nav li {
-  display: inline;
-  font-size: 1.4rem;
-  white-space: nowrap;
-  margin: 0 2.4vw; }
-  @media (min-width: 960px) {
-    nav li {
-      margin: 0;
-      font-size: 1.8rem; }
-      nav li:not(:last-child) {
-        margin-right: 3rem; } }
-  nav li a:before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0.3rem;
-    bottom: 0;
-    left: 0;
-    border-bottom: 0.3rem solid #FFCC80;
-    -webkit-transition: width 0.3s;
-    transition: width 0.3s; }
-  nav li a.active:before {
-    width: 1.6rem; }
-  @media (hover: hover) {
-    nav li a:hover:before {
-      width: 50%; } }
-nav a {
-  display: inline-block;
-  position: relative; }
-nav button {
-  margin: 0; }
+.two-thirds, .four-sixths, .eight-twelfths { width: 66.666%; }
 
-#cta .cta-container {
-  width: 100%;
-  max-width: 39rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem; }
-#cta h2 {
-  margin: 0; }
-#cta a {
-  width: 100%; }
-#cta p {
-  white-space: nowrap;
-  margin: 0;
-  padding: 0; }
+/** Quarters */
+.one-quarter, .two-eighths, .three-twelfths { width: 25%; }
 
-.cta-button {
-  font-size: 4.8vw;
-  margin: 0;
-  height: 100%;
-  width: 100%; }
-  @media (min-width: 480px) {
-    .cta-button {
-      font-size: 2.8rem; } }
+.three-quarters, .six-eighths, .nine-twelfths { width: 75%; }
 
-@font-face {
-  font-family: 'Sofia Pro';
-  src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Sofia Pro';
-  src: url("/assets/fonts/SofiaProMedium.woff2") format("woff2"), url("/assets/fonts/SofiaProMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Sofia Pro';
-  src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: "Sofia Pro", sans-serif;
-  color: #424242;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 2.8rem; }
-  @media (min-width: 480px) {
-    body {
-      line-height: 3rem; } }
+/** Fifths */
+.one-fifth, .two-tenths { width: 20%; }
 
-h1 {
-  color: #EF5350; }
+.two-fifths, .four-tenths { width: 40%; }
 
-h1,
-h2 {
-  margin: 1.8rem 0;
-  font-weight: 600;
-  font-size: 3.4rem;
-  line-height: 4.1rem; }
+.three-fifths, .six-tenths { width: 60%; }
 
-h3 {
-  margin: 1.8rem 0;
-  font-weight: 500;
-  font-size: 2.4rem;
-  line-height: 3.4rem; }
+.four-fifths, .eight-tenths { width: 80%; }
 
-h4 {
-  font-weight: 500; }
+/** Sixths */
+.one-sixth, .two-twelfths { width: 16.666%; }
 
-.card h3 {
-  margin: 0; }
+.five-sixths, .ten-twelfths { width: 83.333%; }
 
-.dash {
-  color: #80CBC4; }
+/** Eighths */
+.one-eighth { width: 12.5%; }
 
-p {
-  margin: 1rem 0; }
+.three-eighths { width: 37.5%; }
 
-a {
-  text-decoration: none;
-  color: #424242; }
+.five-eighths { width: 62.5%; }
 
-.highlight {
-  position: relative; }
-  .highlight::after {
-    position: absolute;
-    left: 0.5rem;
-    top: 0.6rem;
-    content: "";
-    width: 98%;
-    height: 1.3rem;
-    background-color: #FFECB3;
-    z-index: -999;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s; }
-  @media (hover: hover) {
-    .highlight:hover::after {
-      opacity: 0; } }
+.seven-eighths { width: 87.5%; }
 
-.bg-red {
-  background-color: #EF5350; }
+/** Tenths */
+.one-tenth { width: 10%; }
 
-.bg-yellow {
-  background-color: #FFECB3; }
+.three-tenths { width: 30%; }
 
-.bg-pink {
-  background-color: #FFDEDE; }
+.seven-tenths { width: 70%; }
 
-.bg-dark-green {
-  background-color: #2F8C7E; }
+.nine-tenths { width: 90%; }
 
-.bg-light-green {
-  background-color: #E0F2F1; }
+/** Twelfths */
+.one-twelfth { width: 8.333%; }
 
-.bg-gray {
-  background-color: #F6F6F6; }
+.five-twelfths { width: 41.666%; }
 
-.text-red {
-  color: #EF5350; }
+.seven-twelfths { width: 58.333%; }
 
-.text-green {
-  color: #2F8C7E; }
+.eleven-twelfths { width: 91.666%; }
 
-/* Home blocks */
-#home h1 {
-  white-space: nowrap; }
-#home h3 {
-  margin-top: -1rem; }
-@media (min-width: 960px) {
-  #home {
-    margin-top: -3rem; } }
+/** Our responsive classes, if we have enabled them. */
+@media only screen and (max-width: 480px) { /** Whole */
+  .palm--one-whole { width: 100%; }
+  /** Halves */
+  .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths { width: 50%; }
+  /** Thirds */
+  .palm--one-third, .palm--two-sixths, .palm--four-twelfths { width: 33.333%; }
+  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths { width: 25%; }
+  .palm--three-quarters, .palm--six-eighths, .palm--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .palm--one-fifth, .palm--two-tenths { width: 20%; }
+  .palm--two-fifths, .palm--four-tenths { width: 40%; }
+  .palm--three-fifths, .palm--six-tenths { width: 60%; }
+  .palm--four-fifths, .palm--eight-tenths { width: 80%; }
+  /** Sixths */
+  .palm--one-sixth, .palm--two-twelfths { width: 16.666%; }
+  .palm--five-sixths, .palm--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .palm--one-eighth { width: 12.5%; }
+  .palm--three-eighths { width: 37.5%; }
+  .palm--five-eighths { width: 62.5%; }
+  .palm--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .palm--one-tenth { width: 10%; }
+  .palm--three-tenths { width: 30%; }
+  .palm--seven-tenths { width: 70%; }
+  .palm--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .palm--one-twelfth { width: 8.333%; }
+  .palm--five-twelfths { width: 41.666%; }
+  .palm--seven-twelfths { width: 58.333%; }
+  .palm--eleven-twelfths { width: 91.666%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) { /** Whole */
+  .lap--one-whole { width: 100%; }
+  /** Halves */
+  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths { width: 50%; }
+  /** Thirds */
+  .lap--one-third, .lap--two-sixths, .lap--four-twelfths { width: 33.333%; }
+  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths { width: 25%; }
+  .lap--three-quarters, .lap--six-eighths, .lap--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .lap--one-fifth, .lap--two-tenths { width: 20%; }
+  .lap--two-fifths, .lap--four-tenths { width: 40%; }
+  .lap--three-fifths, .lap--six-tenths { width: 60%; }
+  .lap--four-fifths, .lap--eight-tenths { width: 80%; }
+  /** Sixths */
+  .lap--one-sixth, .lap--two-twelfths { width: 16.666%; }
+  .lap--five-sixths, .lap--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .lap--one-eighth { width: 12.5%; }
+  .lap--three-eighths { width: 37.5%; }
+  .lap--five-eighths { width: 62.5%; }
+  .lap--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .lap--one-tenth { width: 10%; }
+  .lap--three-tenths { width: 30%; }
+  .lap--seven-tenths { width: 70%; }
+  .lap--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .lap--one-twelfth { width: 8.333%; }
+  .lap--five-twelfths { width: 41.666%; }
+  .lap--seven-twelfths { width: 58.333%; }
+  .lap--eleven-twelfths { width: 91.666%; } }
+@media only screen and (min-width: 481px) { /** Whole */
+  .lap-up--one-whole { width: 100%; }
+  /** Halves */
+  .lap-up--one-half, .lap-up--two-quarters, .lap-up--three-sixths, .lap-up--four-eighths, .lap-up--five-tenths, .lap-up--six-twelfths { width: 50%; }
+  /** Thirds */
+  .lap-up--one-third, .lap-up--two-sixths, .lap-up--four-twelfths { width: 33.333%; }
+  .lap-up--two-thirds, .lap-up--four-sixths, .lap-up--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .lap-up--one-quarter, .lap-up--two-eighths, .lap-up--three-twelfths { width: 25%; }
+  .lap-up--three-quarters, .lap-up--six-eighths, .lap-up--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .lap-up--one-fifth, .lap-up--two-tenths { width: 20%; }
+  .lap-up--two-fifths, .lap-up--four-tenths { width: 40%; }
+  .lap-up--three-fifths, .lap-up--six-tenths { width: 60%; }
+  .lap-up--four-fifths, .lap-up--eight-tenths { width: 80%; }
+  /** Sixths */
+  .lap-up--one-sixth, .lap-up--two-twelfths { width: 16.666%; }
+  .lap-up--five-sixths, .lap-up--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .lap-up--one-eighth { width: 12.5%; }
+  .lap-up--three-eighths { width: 37.5%; }
+  .lap-up--five-eighths { width: 62.5%; }
+  .lap-up--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .lap-up--one-tenth { width: 10%; }
+  .lap-up--three-tenths { width: 30%; }
+  .lap-up--seven-tenths { width: 70%; }
+  .lap-up--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .lap-up--one-twelfth { width: 8.333%; }
+  .lap-up--five-twelfths { width: 41.666%; }
+  .lap-up--seven-twelfths { width: 58.333%; }
+  .lap-up--eleven-twelfths { width: 91.666%; } }
+@media only screen and (max-width: 1023px) { /** Whole */
+  .portable--one-whole { width: 100%; }
+  /** Halves */
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths { width: 50%; }
+  /** Thirds */
+  .portable--one-third, .portable--two-sixths, .portable--four-twelfths { width: 33.333%; }
+  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths { width: 25%; }
+  .portable--three-quarters, .portable--six-eighths, .portable--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .portable--one-fifth, .portable--two-tenths { width: 20%; }
+  .portable--two-fifths, .portable--four-tenths { width: 40%; }
+  .portable--three-fifths, .portable--six-tenths { width: 60%; }
+  .portable--four-fifths, .portable--eight-tenths { width: 80%; }
+  /** Sixths */
+  .portable--one-sixth, .portable--two-twelfths { width: 16.666%; }
+  .portable--five-sixths, .portable--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .portable--one-eighth { width: 12.5%; }
+  .portable--three-eighths { width: 37.5%; }
+  .portable--five-eighths { width: 62.5%; }
+  .portable--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .portable--one-tenth { width: 10%; }
+  .portable--three-tenths { width: 30%; }
+  .portable--seven-tenths { width: 70%; }
+  .portable--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .portable--one-twelfth { width: 8.333%; }
+  .portable--five-twelfths { width: 41.666%; }
+  .portable--seven-twelfths { width: 58.333%; }
+  .portable--eleven-twelfths { width: 91.666%; } }
+@media only screen and (min-width: 1024px) { /** Whole */
+  .desk--one-whole { width: 100%; }
+  /** Halves */
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths { width: 50%; }
+  /** Thirds */
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths { width: 33.333%; }
+  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths { width: 25%; }
+  .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .desk--one-fifth, .desk--two-tenths { width: 20%; }
+  .desk--two-fifths, .desk--four-tenths { width: 40%; }
+  .desk--three-fifths, .desk--six-tenths { width: 60%; }
+  .desk--four-fifths, .desk--eight-tenths { width: 80%; }
+  /** Sixths */
+  .desk--one-sixth, .desk--two-twelfths { width: 16.666%; }
+  .desk--five-sixths, .desk--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .desk--one-eighth { width: 12.5%; }
+  .desk--three-eighths { width: 37.5%; }
+  .desk--five-eighths { width: 62.5%; }
+  .desk--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .desk--one-tenth { width: 10%; }
+  .desk--three-tenths { width: 30%; }
+  .desk--seven-tenths { width: 70%; }
+  .desk--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .desk--one-twelfth { width: 8.333%; }
+  .desk--five-twelfths { width: 41.666%; }
+  .desk--seven-twelfths { width: 58.333%; }
+  .desk--eleven-twelfths { width: 91.666%; } }
+@media only screen and (min-width: 1800px) { /** Whole */
+  .monitor--one-whole { width: 100%; }
+  /** Halves */
+  .monitor--one-half, .monitor--two-quarters, .monitor--three-sixths, .monitor--four-eighths, .monitor--five-tenths, .monitor--six-twelfths { width: 50%; }
+  /** Thirds */
+  .monitor--one-third, .monitor--two-sixths, .monitor--four-twelfths { width: 33.333%; }
+  .monitor--two-thirds, .monitor--four-sixths, .monitor--eight-twelfths { width: 66.666%; }
+  /** Quarters */
+  .monitor--one-quarter, .monitor--two-eighths, .monitor--three-twelfths { width: 25%; }
+  .monitor--three-quarters, .monitor--six-eighths, .monitor--nine-twelfths { width: 75%; }
+  /** Fifths */
+  .monitor--one-fifth, .monitor--two-tenths { width: 20%; }
+  .monitor--two-fifths, .monitor--four-tenths { width: 40%; }
+  .monitor--three-fifths, .monitor--six-tenths { width: 60%; }
+  .monitor--four-fifths, .monitor--eight-tenths { width: 80%; }
+  /** Sixths */
+  .monitor--one-sixth, .monitor--two-twelfths { width: 16.666%; }
+  .monitor--five-sixths, .monitor--ten-twelfths { width: 83.333%; }
+  /** Eighths */
+  .monitor--one-eighth { width: 12.5%; }
+  .monitor--three-eighths { width: 37.5%; }
+  .monitor--five-eighths { width: 62.5%; }
+  .monitor--seven-eighths { width: 87.5%; }
+  /** Tenths */
+  .monitor--one-tenth { width: 10%; }
+  .monitor--three-tenths { width: 30%; }
+  .monitor--seven-tenths { width: 70%; }
+  .monitor--nine-tenths { width: 90%; }
+  /** Twelfths */
+  .monitor--one-twelfth { width: 8.333%; }
+  .monitor--five-twelfths { width: 41.666%; }
+  .monitor--seven-twelfths { width: 58.333%; }
+  .monitor--eleven-twelfths { width: 91.666%; } }
+/*------------------------------------*\ $PUSH \*------------------------------------*/
+/** Push classes, to move grid items over to the right by certain amounts. */
+/*------------------------------------*\ $PULL \*------------------------------------*/
+/** Pull classes, to move grid items back to the left by certain amounts. */
+#content-wrapper { max-width: 128rem; margin-right: auto; margin-left: auto; padding: 0 6%; }
 
-#companies button {
-  margin-top: 0.8rem; }
+#body-wrapper { height: 100%; min-height: calc(100vh - calc(7.4rem)); }
+@media only screen and (max-width: 480px) { #body-wrapper { min-height: calc(100vh - calc(4.4rem)); } }
 
-@media (min-width: 840px) {
-  #selected-companies .block-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProMedium.woff2") format("woff2"), url("/assets/fonts/SofiaProMedium.woff") format("woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff"); font-weight: 600; font-style: normal; }
+body { -webkit-font-smoothing: antialiased; font-family: "Sofia Pro", sans-serif; }
 
-/* About blocks */
-.task-container {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media (min-width: 600px) {
-    .task-container {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-                  -ms-grid-row-align: flex-start;
-              align-items: flex-start; } }
+@media only screen and (min-width: 0) { .hide { display: none !important; }
+  /* Padding top */
+  .pt-1 { padding-top: 1.5rem !important; }
+  .pt-2 { padding-top: 3rem !important; }
+  .pt-3 { padding-top: 6rem !important; }
+  .pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .mt-1 { margin-top: 1.5rem !important; }
+  .mt-2 { margin-top: 3rem !important; }
+  .mt-3 { margin-top: 6rem !important; }
+  .mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .mb-1 { margin-bottom: 1.5rem !important; }
+  .mb-2 { margin-bottom: 3rem !important; }
+  .mb-3 { margin-bottom: 6rem !important; }
+  .mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (max-width: 480px) { .palm--hide { display: none !important; }
+  /* Padding top */
+  .palm--pt-1 { padding-top: 1.5rem !important; }
+  .palm--pt-2 { padding-top: 3rem !important; }
+  .palm--pt-3 { padding-top: 6rem !important; }
+  .palm--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .palm--mt-1 { margin-top: 1.5rem !important; }
+  .palm--mt-2 { margin-top: 3rem !important; }
+  .palm--mt-3 { margin-top: 6rem !important; }
+  .palm--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .palm--mb-1 { margin-bottom: 1.5rem !important; }
+  .palm--mb-2 { margin-bottom: 3rem !important; }
+  .palm--mb-3 { margin-bottom: 6rem !important; }
+  .palm--mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) { .lap--hide { display: none !important; }
+  /* Padding top */
+  .lap--pt-1 { padding-top: 1.5rem !important; }
+  .lap--pt-2 { padding-top: 3rem !important; }
+  .lap--pt-3 { padding-top: 6rem !important; }
+  .lap--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .lap--mt-1 { margin-top: 1.5rem !important; }
+  .lap--mt-2 { margin-top: 3rem !important; }
+  .lap--mt-3 { margin-top: 6rem !important; }
+  .lap--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .lap--mb-1 { margin-bottom: 1.5rem !important; }
+  .lap--mb-2 { margin-bottom: 3rem !important; }
+  .lap--mb-3 { margin-bottom: 6rem !important; }
+  .lap--mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (min-width: 481px) { .lap-up--hide { display: none !important; }
+  /* Padding top */
+  .lap-up--pt-1 { padding-top: 1.5rem !important; }
+  .lap-up--pt-2 { padding-top: 3rem !important; }
+  .lap-up--pt-3 { padding-top: 6rem !important; }
+  .lap-up--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .lap-up--mt-1 { margin-top: 1.5rem !important; }
+  .lap-up--mt-2 { margin-top: 3rem !important; }
+  .lap-up--mt-3 { margin-top: 6rem !important; }
+  .lap-up--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .lap-up--mb-1 { margin-bottom: 1.5rem !important; }
+  .lap-up--mb-2 { margin-bottom: 3rem !important; }
+  .lap-up--mb-3 { margin-bottom: 6rem !important; }
+  .lap-up--mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (max-width: 1023px) { .portable--hide { display: none !important; }
+  /* Padding top */
+  .portable--pt-1 { padding-top: 1.5rem !important; }
+  .portable--pt-2 { padding-top: 3rem !important; }
+  .portable--pt-3 { padding-top: 6rem !important; }
+  .portable--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .portable--mt-1 { margin-top: 1.5rem !important; }
+  .portable--mt-2 { margin-top: 3rem !important; }
+  .portable--mt-3 { margin-top: 6rem !important; }
+  .portable--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .portable--mb-1 { margin-bottom: 1.5rem !important; }
+  .portable--mb-2 { margin-bottom: 3rem !important; }
+  .portable--mb-3 { margin-bottom: 6rem !important; }
+  .portable--mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (min-width: 1024px) { .desk--hide { display: none !important; }
+  /* Padding top */
+  .desk--pt-1 { padding-top: 1.5rem !important; }
+  .desk--pt-2 { padding-top: 3rem !important; }
+  .desk--pt-3 { padding-top: 6rem !important; }
+  .desk--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .desk--mt-1 { margin-top: 1.5rem !important; }
+  .desk--mt-2 { margin-top: 3rem !important; }
+  .desk--mt-3 { margin-top: 6rem !important; }
+  .desk--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .desk--mb-1 { margin-bottom: 1.5rem !important; }
+  .desk--mb-2 { margin-bottom: 3rem !important; }
+  .desk--mb-3 { margin-bottom: 6rem !important; }
+  .desk--mb-4 { margin-bottom: 9rem !important; } }
+@media only screen and (min-width: 1800px) { .monitor--hide { display: none !important; }
+  /* Padding top */
+  .monitor--pt-1 { padding-top: 1.5rem !important; }
+  .monitor--pt-2 { padding-top: 3rem !important; }
+  .monitor--pt-3 { padding-top: 6rem !important; }
+  .monitor--pt-4 { padding-top: 9rem !important; }
+  /* Margin top */
+  .monitor--mt-1 { margin-top: 1.5rem !important; }
+  .monitor--mt-2 { margin-top: 3rem !important; }
+  .monitor--mt-3 { margin-top: 6rem !important; }
+  .monitor--mt-4 { margin-top: 9rem !important; }
+  /* Margin bottom */
+  .monitor--mb-1 { margin-bottom: 1.5rem !important; }
+  .monitor--mb-2 { margin-bottom: 3rem !important; }
+  .monitor--mb-3 { margin-bottom: 6rem !important; }
+  .monitor--mb-4 { margin-bottom: 9rem !important; } }
+.bg-red { background-color: #ef5350; }
 
-.task {
-  margin: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25rem;
-  padding: 0 2rem; }
-  .task img {
-    height: 16rem;
-    padding: 0 0 2rem; }
-    @media (min-width: 600px) {
-      .task img {
-        height: 10rem; } }
-    @media (min-width: 840px) {
-      .task img {
-        height: 15rem; } }
-    .task img:first-child {
-      margin-left: -2rem; }
-    @media (min-width: 1280px) {
-      .task img {
-        height: 20rem; } }
+.bg-yellow { background-color: #ffecb3; }
 
-#agenda {
-  margin-bottom: 3rem; }
-  #agenda a {
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s; }
-    @media (hover: hover) {
-      #agenda a:hover {
-        opacity: 0.5; } }
+.bg-pink { background-color: #ffdede; }
 
-.agenda-block:not(:first-child) .date {
-  margin-top: 6rem; }
-  @media (min-width: 840px) {
-    .agenda-block:not(:first-child) .date {
-      margin-top: 0; } }
-@media (min-width: 840px) {
-  .agenda-block {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 21rem 1fr;
-        grid-template-columns: 21rem 1fr; }
-    .agenda-block:not(:last-child) {
-      margin-bottom: 5.5rem; } }
+.bg-dark-green { background-color: #2f8c7e; }
 
-.date {
-  margin-bottom: 2rem; }
-  .date h2 {
-    margin: 0;
-    font-weight: 400; }
-  @media (min-width: 840px) {
-    .date {
-      margin-bottom: 0; } }
+.bg-light-green { background-color: #e0f2f1; }
 
-.agenda-item {
-  padding: 2.3rem 2.3rem 1.7rem; }
-  @media (min-width: 840px) {
-    .agenda-item {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 12rem 3fr 2fr;
-          grid-template-columns: 12rem 3fr 2fr;
-      grid-gap: 4rem; } }
-  .agenda-item:not(:last-child) {
-    margin-bottom: 2rem; }
-  .agenda-item .sub {
-    font-size: 2rem; }
+.bg-gray { background-color: #f6f6f6; }
 
-button {
-  margin: 2rem 0;
-  background-color: #EF5350;
-  padding: 2.2rem 1.8rem 1.8rem;
-  line-height: 0;
-  color: #fff;
-  border: none;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s; }
-  button a {
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap; }
-  @media (hover: hover) {
-    button.bg-red:hover {
-      background-color: #f16a67; } }
-  @media (hover: hover) {
-    button.bg-dark-green:hover {
-      background-color: #359f8f; } }
+.text-red { color: #ef5350; }
 
-.card-container {
-  margin-bottom: 4rem;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 3rem;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; }
-  @media (min-width: 600px) {
-    .card-container {
-      -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 840px) {
-    .card-container {
-      grid-gap: 4.5rem; } }
-  @media (min-width: 1280px) {
-    .card-container {
-      -ms-grid-columns: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr; } }
-  .card-container.yellow .card {
-    box-shadow: 1rem 1rem 0 #FFCC80; }
-    @media (min-width: 840px) {
-      .card-container.yellow .card {
-        box-shadow: 1.5rem 1.5rem 0 #FFCC80; } }
-  .card-container.green .card {
-    box-shadow: 1rem 1rem 0 #80CBC4; }
-    @media (min-width: 840px) {
-      .card-container.green .card {
-        box-shadow: 1.5rem 1.5rem 0 #80CBC4; } }
-
-.card {
-  cursor: pointer;
-  position: relative;
-  background-color: #fff;
-  padding: 2rem 3rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  height: 14rem; }
-  @media (min-width: 840px) {
-    .card {
-      padding: 2.5rem 3.5rem; } }
-  @media (hover: hover) {
-    .card:hover:hover {
-      -webkit-transform: translateY(-1.5rem);
-              transform: translateY(-1.5rem); } }
-
-.card-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%; }
-
-.plus {
-  opacity: 0.2;
-  font-size: 3rem;
-  text-align: right;
-  position: absolute;
-  top: 1rem;
-  right: 2rem; }
-
-.card-image {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media (min-width: 840px) {
-    .card-image {
-      height: 15rem; } }
-  .card-image img {
-    padding: 0 3rem 0rem;
-    max-height: 100%;
-    width: 70%; }
-
-.card-text p, .modal-text p {
-  font-size: 1.6rem;
-  line-height: 2.3rem; }
-  @media (min-width: 480px) {
-    .card-text p, .modal-text p {
-      line-height: 2.5rem; } }
-
-.modal-overlay {
-  z-index: 9999;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 0;
-  left: 0;
-  display: none; }
-  .modal-overlay h3 {
-    color: #fff; }
-  .modal-overlay a {
-    color: #2F8C7E; }
-  .modal-overlay a,
-  .modal-overlay .close-modal-btn {
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s; }
-    @media (hover: hover) {
-      .modal-overlay a:hover,
-      .modal-overlay .close-modal-btn:hover {
-        opacity: 0.6; } }
-
-.modal-container {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  box-sizing: border-box; }
-
-.modal {
-  background-color: white;
-  box-shadow: 1.5rem 1.5rem 2rem rgba(0, 0, 0, 0.04);
-  width: 100%; }
-
-.modal-header {
-  background-color: #EF5350;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 0;
-  padding: 0.5rem 3rem 0; }
-  @media (min-width: 840px) {
-    .modal-header {
-      padding: 0.3rem 4rem 0; } }
-  .modal-header img {
-    height: 4rem; }
-
-.close-modal-btn {
-  cursor: pointer;
-  color: #fff;
-  font-size: 3rem; }
-  @media (min-width: 840px) {
-    .close-modal-btn {
-      margin-top: 0.3rem; } }
-
-.modal-text {
-  padding: 2rem 3rem; }
-  @media (min-width: 840px) {
-    .modal-text {
-      padding: 2rem 4rem; } }
-  @media (min-width: 840px) {
-    .modal-text {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 2fr 1fr;
-          grid-template-columns: 2fr 1fr;
-      grid-gap: 6rem; } }
+.text-green { color: #2f8c7e; }

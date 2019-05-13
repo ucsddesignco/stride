@@ -1,45 +1,82 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Stride is a design-centric career fair hosted by Design at UCSD on January 15th, 2019 at PC East Ballroom." />
-	<meta name="keywords" content="career fair, design">
-	
-	<!-- Facebook -->
-  <meta property="og:title" content="Stride">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://stride.designatucsd.org/assets/images/preview.png">
-  <meta property="og:url" content="https://stride.designatucsd.org/">
-	<meta property="og:description" content="Stride is a design-centric career fair hosted by Design at UCSD on January 15th, 2019 at PC East Ballroom.">
-	
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84330975-6"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <!-- Meta tags -->
+  <base href="{{ site.base }}" />
 
-		gtag('config', 'UA-84330975-6');
-	</script>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="career fair, design" />
+  <meta property="og:title" content="Stride" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="{{ site.url }}{{ site.base }}assets/images/preview.png"
+  />
+  <meta property="og:url" content="https://stride.designatucsd.org/" />
+  <meta property="og:description" content="{{ site.description }}" />
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#00796b">
-	<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#00796b">
-	<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-84330975-6"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-	<!--  CSS -->
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    gtag("config", "UA-84330975-6");
+  </script>
 
-	<title>
-		{% if page.title == "Home" %}
-			{{ site.title }} | {{ site.description }}
-		{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{% endif %}
-	</title>
+  <!-- Favicons -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="assets/images/favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/images/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="assets/images/favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="assets/images/favicons/safari-pinned-tab.svg"
+    color="#00796b"
+  />
+  <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#00796b" />
+  <meta
+    name="msapplication-config"
+    content="assets/images/favicons/browserconfig.xml"
+  />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!--  CSS -->
+  <link rel="stylesheet" href="{{
+    "/assets/css/main.css" | prepend: site.baseurl
+  }}">
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  />
+
+  <title>
+    {% if page.title == "Home" %}
+    {{ site.title }} | {{ site.description }} {% elsif page.title %}{{
+      page.title
+    }}
+    | {{ site.title }}{% else %}{% endif %}
+  </title>
 </head>
