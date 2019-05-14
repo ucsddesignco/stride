@@ -18,7 +18,7 @@ email: designatucsd@gmail.com
 description: Stride is a design-centric career fair hosted by Design at UCSD on January 15th, 2019 at PC East Ballroom.
 signup: "https://stridestudentreg.eventbrite.com"
 baseurl: "" # the subpath of your site, e.g. /blog
-base: "/"
+base: "/2019/"
 url: "https://stride.designatucsd.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: designatucsd
 
