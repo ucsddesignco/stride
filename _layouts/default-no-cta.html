@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lange="en">
+  {% include head.html %}
+
+  <body>
+    <div id="body-wrapper">
+      <div class="outer-container">
+        {% include header.html %}
+      </div>
+      <main>
+        <article>
+          {{ content }}
+        </article>
+      </main>
+    </div>
+    <div class="outer-container">
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
