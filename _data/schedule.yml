@@ -2,11 +2,11 @@
   items:
     - time: 5:00 PM
       activity: <a href='https://www.facebook.com/events/273839346646022/' target='_blank'>Intuit Info/Networking Session →</a>
-      color: green
+      color: light-green
       location: Qualcomm Room, JSOE
     - time: 6:45 PM
       activity: <a href='https://www.facebook.com/events/654807774937759/' target='_blank'>ServiceNow Info/Networking Session →</a>
-      color: green
+      color: light-green
       location: Qualcomm Room, JSOE
 
 - date: Tuesday, January 15

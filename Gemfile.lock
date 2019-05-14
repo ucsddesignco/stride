@@ -255,7 +255,6 @@ DEPENDENCIES
   github-pages
   jekyll-autoprefixer
   jekyll-babel
-  jekyll-feed (~> 0.6)
   tzinfo-data
 
 BUNDLED WITH

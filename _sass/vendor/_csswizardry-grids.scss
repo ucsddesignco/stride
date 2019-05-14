@@ -74,8 +74,8 @@ $mobile-first: true !default;
 /**
   * Set the spacing between your grid items.
   */
-$gutter: 6rem !default;
-$gutter-portable: 3rem !default;
+$gutter: 8rem !default;
+$gutter-portable: 4rem !default;
 
 /**
   * Would you like Sass’ silent classes, or regular CSS classes?
@@ -114,7 +114,7 @@ $breakpoints: (
   "lap-up" "(min-width: 481px)",
   "portable" "(max-width: 1023px)",
   "desk" "(min-width: 1024px)",
-  "monitor" "(min-width: 1800px)"
+  "monitor" "(min-width: 2200px)"
 ) !default;
 
 /**

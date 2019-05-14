@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 0;
+  color: #fff;
+  transition: background-color 0.3s;
+  font-weight: $semibold;
+  padding: 2.2rem 2rem 2rem;
+  &.btn-red {
+    background-color: $red;
+    @include hover {
+      background-color: darken($red, 7%);
+    }
+  }
+  &.btn-green {
+    background-color: $dark-green;
+    @include hover {
+      background-color: darken($dark-green, 7%);
+    }
+  }
+}

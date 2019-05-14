@@ -1,0 +1,108 @@
+$shadow-portable: 1rem;
+$shadow: 1.5rem;
+
+.card {
+  background-color: #fff;
+  position: relative;
+  height: 18rem;
+  padding: $spacer-2;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  cursor: pointer;
+  @include hover {
+    transform: translateY(-0.5rem);
+    @include grid-media-query(lap-up) {
+      transform: translateY(-1.2rem);
+    }
+  }
+  @include grid-media-query(portable) {
+    height: 22vw;
+    padding: $spacer-3;
+    box-shadow: $shadow-portable $shadow-portable 0 $dark-yellow;
+  }
+  @include grid-media-query(lap) {
+    padding: 10vw;
+    margin-bottom: calc(#{$spacer-2});
+  }
+  @include grid-media-query(desk) {
+    margin-bottom: calc(#{$spacer-2 + $shadow});
+  }
+  img {
+    width: 100%;
+  }
+  .expand-icon {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    line-height: 0;
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.2;
+    text-align: right;
+    //font-weight: $bold;
+    font-size: 3rem;
+  }
+}
+
+.bg-yellow {
+  .card {
+    box-shadow: $shadow $shadow 0 $dark-yellow;
+    @include grid-media-query(portable) {
+      box-shadow: $shadow-portable $shadow-portable 0 $dark-yellow;
+    }
+  }
+}
+
+.bg-light-green {
+  .card {
+    box-shadow: $shadow $shadow 0 $green;
+    @include grid-media-query(portable) {
+      box-shadow: $shadow-portable $shadow-portable 0 $green;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: none;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 6%;
+  }
+  a {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+    @include hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+.modal {
+  background-color: #fff;
+  max-width: 100rem;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-modal-btn {
+  margin-top: 0.3rem;
+  cursor: pointer;
+  font-size: 150%;
+  transition: transform 0.3s;
+  @include hover {
+    transform: scale(1.2);
+  }
+}

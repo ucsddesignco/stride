@@ -1,0 +1,57 @@
+---
+layout: default
+title: Schedule
+permalink: schedule
+---
+
+<div class="outer-container mb-3 mt-3">
+  <div class="inner-container">
+    <div class="grid grid--middle grid--rev">
+      <div class="grid__item desk--one-half portable--mb-2">
+        <h1 class="mb-1">Schedule of Events</h1>
+        <p>
+          Join us Tuesday for info sessions with two of our top sponsors to
+          learn more about their opportunities. Doors open at noon on Tuesday
+          for our general career fair. We recommend you bring your resumes and a
+          project piece to show.
+        </p>
+      </div>
+      <div class="grid__item desk--one-half">
+        <div class="hero">
+          <img src="assets/images/illustrations/schedule.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="outer-container pb-2">
+  <div class="inner-container">
+    {% for day in site.data.schedule %}
+    <div class="grid mb-2">
+      <div class="grid__item desk--one-sixth">
+        <h2 class="mb-1">{{ day.date }}</h2>
+      </div>
+      <div class="grid__item desk--five-sixths">
+        {% for item in day.items %}
+        <div class="bg-{{ item.color }} mb-1">
+          <div class="grid grid--narrow  pt-1 pb-1 pr-1 pl-1">
+            <div class="grid__item lap--two-eighths desk--one-sixth">
+              {{ item.time }}
+            </div>
+            <div class="grid__item lap--three-eighths desk--three-sixths">
+              {{ item.activity }}
+            </div>
+            {% if item.location %}
+            <div class="grid__item lap--three-eighths desk--two-sixths">
+              {{ item.location }}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

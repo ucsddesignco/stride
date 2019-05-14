@@ -1,7 +1,58 @@
 ---
 layout: default
 title: Home
-permalink: /
-order: 1
+url: ""
 ---
 
+<div class="outer-container mb-3 mt-3">
+  <div class="inner-container">
+    <div class="grid grid--middle">
+      <div class="grid__item desk--one-half portable--mb-2">
+        <h1 class="mb-1">Design-Centric Career Fair</h1>
+        <h2>January 15th, 2019 <span class="text-green">—</span> 12–4 PM</h2>
+        <h2 class="mb-1">PC East Ballroom</h2>
+        <p class="mb-1">
+          The traditional career fair format doesn’t cater to students seeking
+          design roles. Designers need a medium to showcase their project work
+          and experience. At Stride, students have the opportunity to present
+          their projects and portfolios rather than simply handing off their
+          resume to recruiters.
+        </p>
+        <p><a class="btn btn-green" href="about">Learn More</a></p>
+      </div>
+      <div class="grid__item desk--one-half">
+        <div class="hero" id="runner"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-yellow">
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="grid pt-3 mb-2">
+        <div class="grid__item desk--one-half">
+          <h1 class="text-dark portable--mb-1">Top Sponsors</h1>
+        </div>
+        <div class="grid__item desk--one-half desk--text-right">
+          <h2><a href="companies">View Full Company List ⟶</a></h2>
+        </div>
+      </div>
+      <div class="grid pb-3">
+        {% for company in site.data.companies %}{% unless company.hide %} {% if
+        company.home %} {% include company-card.html %} {% endif %} {% endunless
+        %}{% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/scripts/lottie.js"></script>
+<script src="assets/scripts/lottie-index.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script src="assets/scripts/modal.js"></script>

@@ -1,0 +1,57 @@
+---
+layout: default
+title: Companies
+permalink: companies
+---
+
+<div class="outer-container mb-3 mt-3">
+  <div class="inner-container">
+    <div class="grid grid--middle">
+      <div class="grid__item desk--one-half portable--mb-2">
+        <h1 class="mb-1">Companies</h1>
+        <p class="mb-1">
+          Our corporate partners represent multiple industries and diverse
+          product lines and services. Come to Stride to learn more about
+          opportunities at a wide range of organizations.
+        </p>
+        <p class="mb-1">
+          Looking to recruit top talent? Learn how to participate.
+        </p>
+        <a
+          class="btn btn-green"
+          href="https://stridecompanyregistration.eventbrite.com/"
+          target="_blank"
+          >Register Your Company</a
+        >
+      </div>
+      <div class="grid__item desk--one-half">
+        <div class="hero">
+          <img src="assets/images/illustrations/companies.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light-green">
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="grid pt-3 mb-2">
+        <div class="grid__item">
+          <h1 class="text-dark">Attending Companies</h1>
+        </div>
+      </div>
+      <div class="grid pb-3">
+        {% for company in site.data.companies %} {% unless company.hide %} {%
+        include company-card.html %} {% endunless %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script src="assets/scripts/modal.js"></script>

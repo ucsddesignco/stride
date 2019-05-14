@@ -1,0 +1,74 @@
+header,
+footer {
+  font-weight: $semibold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  @include grid-media-query(portable) {
+    flex-direction: column;
+    font-size: 80%;
+    .btn {
+      padding: 1.7rem 1.5rem 1.5rem;
+      margin-left: $spacer-1;
+    }
+  }
+}
+
+#stride-logo {
+  line-height: 0;
+  img {
+    width: 10.5rem;
+  }
+  @include grid-media-query(portable) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer {
+  height: $footer-height;
+  @include grid-media-query(portable) {
+    flex-direction: column;
+    font-size: 80%;
+    justify-content: center;
+  }
+}
+
+nav {
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+      @include grid-media-query(lap-up) {
+        margin-right: $spacer-1;
+      }
+    }
+  }
+  a:not(.btn) {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0.3rem;
+      bottom: 0;
+      top: $spacer-1;
+      left: 0;
+      border-bottom: 0.3rem solid $dark-yellow;
+      transition: width 0.3s;
+    }
+    &.active {
+      &:before {
+        width: 1.6rem;
+      }
+    }
+    @include hover {
+      &:before {
+        width: 1.6rem;
+      }
+    }
+  }
+}

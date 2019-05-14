@@ -9,6 +9,25 @@
     .#{$name}hide {
       display: none !important;
     }
+    .#{$name}text-right {
+      text-align: right;
+    }
+    /* Padding  */
+    .#{$name}p-1 {
+      padding: $spacer-1 !important;
+    }
+
+    .#{$name}p-2 {
+      padding: $spacer-2 !important;
+    }
+
+    .#{$name}p-3 {
+      padding: $spacer-3 !important;
+    }
+
+    .#{$name}p-4 {
+      padding: $spacer-4 !important;
+    }
     /* Padding top */
     .#{$name}pt-1 {
       padding-top: $spacer-1 !important;
@@ -26,6 +45,57 @@
       padding-top: $spacer-4 !important;
     }
 
+    /* Padding right */
+    .#{$name}pr-1 {
+      padding-right: $spacer-1 !important;
+    }
+
+    .#{$name}pr-2 {
+      padding-right: $spacer-2 !important;
+    }
+
+    .#{$name}pr-3 {
+      padding-right: $spacer-3 !important;
+    }
+
+    .#{$name}pr-4 {
+      padding-right: $spacer-4 !important;
+    }
+
+    /* Padding bottom */
+    .#{$name}pb-1 {
+      padding-bottom: $spacer-1 !important;
+    }
+
+    .#{$name}pb-2 {
+      padding-bottom: $spacer-2 !important;
+    }
+
+    .#{$name}pb-3 {
+      padding-bottom: $spacer-3 !important;
+    }
+
+    .#{$name}pb-4 {
+      padding-bottom: $spacer-4 !important;
+    }
+
+    /* Padding left */
+    .#{$name}pl-1 {
+      padding-left: $spacer-1 !important;
+    }
+
+    .#{$name}pl-2 {
+      padding-left: $spacer-2 !important;
+    }
+
+    .#{$name}pl-3 {
+      padding-left: $spacer-3 !important;
+    }
+
+    .#{$name}pl-4 {
+      padding-left: $spacer-4 !important;
+    }
+
     /* Margin top */
     .#{$name}mt-1 {
       margin-top: $spacer-1 !important;
@@ -41,6 +111,23 @@
 
     .#{$name}mt-4 {
       margin-top: $spacer-4 !important;
+    }
+
+    /* Margin right */
+    .#{$name}mr-1 {
+      margin-right: $spacer-1 !important;
+    }
+
+    .#{$name}mr-2 {
+      margin-right: $spacer-2 !important;
+    }
+
+    .#{$name}mr-3 {
+      margin-right: $spacer-3 !important;
+    }
+
+    .#{$name}mr-4 {
+      margin-right: $spacer-4 !important;
     }
 
     /* Margin bottom */
@@ -63,11 +150,11 @@
 }
 
 .bg-red {
-  background-color: $burnt-sienna;
+  background-color: $red;
 }
 
 .bg-yellow {
-  background-color: $buttermilk;
+  background-color: $yellow;
 }
 
 .bg-pink {
@@ -75,11 +162,11 @@
 }
 
 .bg-dark-green {
-  background-color: $lochinvar;
+  background-color: $dark-green;
 }
 
 .bg-light-green {
-  background-color: $aqua-squeeze;
+  background-color: $light-green;
 }
 
 .bg-gray {
@@ -87,9 +174,35 @@
 }
 
 .text-red {
-  color: $burnt-sienna;
+  color: $red;
 }
 
 .text-green {
-  color: $lochinvar;
+  color: $green;
+}
+
+.text-dark-green {
+  color: $dark-green;
+}
+
+.text-light-green {
+  color: $light-green;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.v-align-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

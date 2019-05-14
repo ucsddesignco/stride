@@ -1,4 +1,54 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Sofia Pro", sans-serif;
+  font-family: "Sofia Pro", Avenir, sans-serif;
+  font-size: $body-font-size;
+  color: $body-font-color;
+  line-height: 170%;
+}
+
+h1 {
+  color: $red;
+  font-weight: $bold;
+  font-size: 3.4rem;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: $semibold;
+  line-height: 140%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: $semibold;
+}
+
+.highlight {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.6rem;
+    content: "";
+    width: 98%;
+    height: 1.3rem;
+    background-color: $yellow;
+    z-index: -999;
+    transition: opacity 0.3s;
+    @include grid-media-query(portable) {
+      left: 0.3rem;
+      top: 0.5rem;
+      height: 1rem;
+    }
+  }
+  @include hover {
+    &::after {
+      opacity: 0;
+    }
+  }
 }

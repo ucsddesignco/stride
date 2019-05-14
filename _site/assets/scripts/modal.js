@@ -9,7 +9,7 @@ $(".card-description").each(function() {
   }
 }); */
 
-$(".company-card").on("click", function() {
+$(".card").on("click", function() {
   $(this)
     .next()
     .fadeIn("fast");

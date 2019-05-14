@@ -1,0 +1,8 @@
+#todo {
+  img {
+    max-height: 18rem;
+    @include grid-media-query(portable) {
+      max-height: 10rem;
+    }
+  }
+}

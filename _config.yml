@@ -25,8 +25,8 @@ github_username: designatucsd
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-babel
+  #- jekyll-autoprefixer
+  #- jekyll-babel
 sass:
   sass_dir: _sass
 include: ["_pages"]

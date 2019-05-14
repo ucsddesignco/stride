@@ -1,0 +1,43 @@
+<div class="grid__item desk--one-third lap--one-half">
+  <div class="card v-align-center palm--mb-1">
+    <div class="expand-icon">+</div>
+    <img
+      src="assets/images/companies/{{ company.logo }}"
+      alt="{{ company.name }}"
+    />
+  </div>
+  <div class="modal-overlay">
+    <div class="container">
+      <div class="modal">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="modal-title bg-red text-light pt-1 pb-1 pr-2 pl-2">
+              <h2>{{ company.name }}</h2>
+              <div class="close-modal-btn">✕</div>
+            </div>
+          </div>
+          <div class="grid__item desk--two-thirds">
+            <div class="pt-1 desk--pb-1 portable--pr-2 pl-2">
+              {{ company.description }}
+            </div>
+          </div>
+          <div class="grid__item desk--one-third">
+            <div class="pt-1 pb-1 pr-2 portable--pl-2">
+              {% if company.roles %}
+              <div class="mb-1">
+                <p><b>Open Roles</b></p>
+                {% for role in company.roles %}
+                <a href="{{ role.link }}" target="_blank">{{ role.title }}</a
+                >{% endfor %}
+              </div>
+              {% endif %}
+
+              <p><b>Visa Sponsorship</b></p>
+              <p>{{ company.visa }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

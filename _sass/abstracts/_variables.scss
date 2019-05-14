@@ -1,19 +1,29 @@
 // Color palette
-$burnt-sienna: #ef5350; // Red
-$mine-shaft: #424242; // Black
-$monte-carlo: #80cbc4; // Green
-$lochinvar: #2f8c7e; // Dark Green
-$aqua-squeeze: #e0f2f1; // Light green
-$buttermilk: #ffecb3; // Yellow
-$chardonnay: #ffcc80; // Dark yellow
+$red: #ef5350; // Red
+$dark: #424242; // Black
+$green: #80cbc4; // Green
+$dark-green: #2f8c7e; // Dark Green
+$light-green: #e0f2f1; // Light green
+$yellow: #ffecb3; // Yellow
+$dark-yellow: #ffcc80; // Dark yellow
 $wild-sand: #f6f6f6; // Light gray
 
-$spacer-1: 1.5rem;
-$spacer-2: 3rem;
-$spacer-3: 6rem;
-$spacer-4: 9rem;
+$body-font-color: $dark;
 
-$body-font-size: 1.4rem;
+$spacer-1: 2rem;
+$spacer-2: 4rem;
+$spacer-3: 8rem;
+$spacer-4: 16rem;
+$gutter: 6rem;
+
+$spacer-1: 2rem;
+$spacer-2: $spacer-1 * 2;
+$spacer-3: $spacer-2 * 2;
+$spacer-4: $spacer-3 * 2;
+
+$body-font-size: 1.8rem;
+$bold: 600;
+$semibold: 500;
 
 $footer-height-palm: calc(#{$spacer-2 + $body-font-size});
 $footer-height: calc(#{$spacer-3 + $body-font-size});
