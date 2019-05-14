@@ -724,10 +724,11 @@ nav li:not(:last-child) { margin-right: 0.8rem; }
 @media only screen and (min-width: 481px) { nav li:not(:last-child) { margin-right: 2rem; } }
 nav a:not(.btn) { position: relative; }
 nav a:not(.btn):before { content: ""; position: absolute; width: 0%; height: 0.3rem; bottom: 0; top: 2rem; left: 0; border-bottom: 0.3rem solid #ffcc80; transition: width 0.3s; }
+@media only screen and (max-width: 1023px) { nav a:not(.btn):before { top: 1.3rem; border-width: 0.2rem; } }
 nav a:not(.btn).active:before { width: 1.6rem; }
 @media (hover: hover) { nav a:not(.btn):hover:before { width: 1.6rem; } }
 
-.btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.2rem 2rem 2rem; }
+.btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.3rem 2rem 2rem; }
 .btn.btn-red { background-color: #ef5350; }
 @media (hover: hover) { .btn.btn-red:hover { background-color: #ec332f; } }
 .btn.btn-green { background-color: #2f8c7e; }
@@ -753,10 +754,12 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 .modal-overlay .container { display: flex; justify-content: center; align-items: center; height: 100%; padding: 0 6%; }
 .modal-overlay a { transition: opacity 0.3s; opacity: 0.5; }
 @media (hover: hover) { .modal-overlay a:hover { opacity: 0.3; } }
+.modal-overlay h2 { margin-top: 0.3rem; }
+@media only screen and (max-width: 480px) { .modal-overlay h2 { margin-top: 0.6rem; } }
 
 .modal { background-color: #fff; max-width: 100rem; }
 
 .modal-title { display: flex; justify-content: space-between; }
 
-.close-modal-btn { margin-top: 0.3rem; cursor: pointer; font-size: 150%; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
+.close-modal-btn { margin-top: 0.6rem; cursor: pointer; font-size: 150%; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
 @media (hover: hover) { .close-modal-btn:hover { -webkit-transform: scale(1.2); transform: scale(1.2); } }

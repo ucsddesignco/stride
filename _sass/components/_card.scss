@@ -85,6 +85,12 @@ $shadow: 1.5rem;
       opacity: 0.3;
     }
   }
+  h2 {
+    margin-top: 0.3rem;
+    @include grid-media-query(palm) {
+      margin-top: 0.6rem;
+    }
+  }
 }
 
 .modal {
@@ -98,7 +104,7 @@ $shadow: 1.5rem;
 }
 
 .close-modal-btn {
-  margin-top: 0.3rem;
+  margin-top: 0.6rem;
   cursor: pointer;
   font-size: 150%;
   transition: transform 0.3s;

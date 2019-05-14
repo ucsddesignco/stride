@@ -59,6 +59,10 @@ nav {
       left: 0;
       border-bottom: 0.3rem solid $dark-yellow;
       transition: width 0.3s;
+      @include grid-media-query(portable) {
+        top: 1.3rem;
+        border-width: 0.2rem;
+      }
     }
     &.active {
       &:before {
