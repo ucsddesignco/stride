@@ -1,11 +1,8 @@
 # Stride Career Fair Website
 ## Set Up
-1. Install Jekyll.
+Install Jekyll and project dependencies.
 ```
 $ gem install jekyll
-```
-2. Install project dependencies.
-```
 $ bundle install
 ```
 ## Development
@@ -15,5 +12,6 @@ $ bundle exec jekyll serve
 ```
 View the site at http://localhost:4000.
 ## Resources
-- [Jekyll documentation](https://jekyllrb.com/docs/)
-- [Sass documentation](https://sass-lang.com/documentation)
+- [Jekyll](https://jekyllrb.com/docs/)
+- [Sass](https://sass-lang.com/documentation)
+- [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids)
