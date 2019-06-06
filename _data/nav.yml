@@ -1,13 +1,13 @@
-- title: Home
+#- title: Home
   url: ""
-- title: About
+#- title: About
   url: about
-- title: Companies
+#- title: Companies
   url: companies
 #- title: A Look Back
 #  url: a-look-back
-- title: Schedule
+#- title: Schedule
   url: schedule
-- title: Volunteer
+#- title: Volunteer
   newtab: true
   url: https://docs.google.com/forms/d/e/1FAIpQLSdt6VVZd8dBxQUQNK8Qp9sDTrAkV_RRuVAs_fLFfRIeyqJKxA/viewform

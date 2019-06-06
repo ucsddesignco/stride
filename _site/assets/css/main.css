@@ -358,18 +358,19 @@ img { width: 100%; }
 @media only screen and (min-width: 481px) and (max-width: 1023px) { .hero img, .hero svg { width: 50% !important; } }
 @media only screen and (min-width: 1024px) { .hero img, .hero svg { width: 100% !important; } }
 
-#cta { max-width: 40rem; display: flex; }
+#cta { max-width: 40rem; }
+@media only screen and (min-width: 1024px) { #cta { display: flex; } }
 
 #cta-btn { width: 100%; }
-#cta-btn .btn { width: 100%; padding: 3rem 0 2.8rem 0; font-size: 140%; }
-@media only screen and (min-width: 481px) { #cta-btn .btn { padding: 3.5rem 0 3.3rem 0; } }
+#cta-btn .btn { padding: 3rem 2.5rem 2.8rem 2.5rem; font-size: 140%; }
+@media only screen and (min-width: 481px) { #cta-btn .btn { padding: 3.5rem 2.5rem 3.3rem 2.5rem; } }
 
 @font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff"); font-weight: 400; font-style: normal; }
 @font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProMedium.woff2") format("woff2"), url("/assets/fonts/SofiaProMedium.woff") format("woff"); font-weight: 500; font-style: normal; }
 @font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff"); font-weight: 600; font-style: normal; }
 body { -webkit-font-smoothing: antialiased; font-family: "Sofia Pro", Avenir, sans-serif; font-size: 1.8rem; color: #424242; line-height: 170%; }
 
-h1 { color: #ef5350; font-weight: 600; font-size: 3.4rem; line-height: 120%; }
+h1 { color: #F9A825; font-weight: 600; font-size: 3.4rem; line-height: 120%; }
 
 h2 { font-size: 2.4rem; font-weight: 500; line-height: 140%; }
 
@@ -378,7 +379,7 @@ a { color: inherit; text-decoration: none; }
 b { font-weight: 500; }
 
 .highlight { position: relative; }
-.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #ffecb3; z-index: -999; transition: opacity 0.3s; }
+.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #F9A825; z-index: -999; transition: opacity 0.3s; }
 @media only screen and (max-width: 1023px) { .highlight::after { left: 0.3rem; top: 0.5rem; height: 1rem; } }
 @media (hover: hover) { .highlight:hover::after { opacity: 0; } }
 
@@ -678,7 +679,11 @@ b { font-weight: 500; }
   .monitor--mb-4 { margin-bottom: 16rem !important; } }
 .bg-red { background-color: #ef5350; }
 
-.bg-yellow { background-color: #ffecb3; }
+.bg-light-red { background-color: #FFEBEE; }
+
+.bg-light-blue { background-color: #E3F2FD; }
+
+.bg-yellow { background-color: #F9A825; }
 
 .bg-pink { background-color: #ffdede; }
 
@@ -689,6 +694,10 @@ b { font-weight: 500; }
 .bg-gray { background-color: #f6f6f6; }
 
 .text-red { color: #ef5350; }
+
+.text-blue { color: #1976D2; }
+
+.text-dark-red { color: #E53935; }
 
 .text-green { color: #80cbc4; }
 
@@ -731,6 +740,8 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 .btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.3rem 2rem 2rem; }
 .btn.btn-red { background-color: #ef5350; }
 @media (hover: hover) { .btn.btn-red:hover { background-color: #ec332f; } }
+.btn.btn-yellow { background-color: #F9A825; }
+@media (hover: hover) { .btn.btn-yellow:hover { background-color: #f49907; } }
 .btn.btn-green { background-color: #2f8c7e; }
 @media (hover: hover) { .btn.btn-green:hover { background-color: #267166; } }
 
@@ -747,9 +758,14 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 .bg-yellow .card { box-shadow: 1.5rem 1.5rem 0 #ffcc80; }
 @media only screen and (max-width: 1023px) { .bg-yellow .card { box-shadow: 1rem 1rem 0 #ffcc80; } }
 
-.bg-light-green .card { box-shadow: 1.5rem 1.5rem 0 #80cbc4; }
-@media only screen and (max-width: 1023px) { .bg-light-green .card { box-shadow: 1rem 1rem 0 #80cbc4; } }
+.bg-light-red .card { box-shadow: 1.5rem 1.5rem 0 #FFEBEE; }
+@media only screen and (max-width: 1023px) { .bg-light-red .card { box-shadow: 1rem 1rem 0 #FFEBEE; } }
 
+.bg-light-blue .card { box-shadow: 1.5rem 1.5rem 0 #E3F2FD; }
+@media only screen and (max-width: 1023px) { .bg-light-blue .card { box-shadow: 1rem 1rem 0 #E3F2FD; } }
+
+/*.bg-light-green { .card { box-shadow: $shadow $shadow 0 $green; @include grid-media-query(portable) { box-shadow: $shadow-portable $shadow-portable 0 $green; } }
+}*/
 .modal-overlay { position: fixed; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; display: none; }
 .modal-overlay .container { display: flex; justify-content: center; align-items: center; height: 100%; padding: 0 6%; }
 .modal-overlay a { transition: opacity 0.3s; opacity: 0.5; }

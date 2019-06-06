@@ -58,17 +58,18 @@ img {
 
 #cta {
   max-width: 40rem;
-  display: flex;
+  @include grid-media-query(desk) {
+    display: flex;
+  }
 }
 
 #cta-btn {
   width: 100%;
   .btn {
-    width: 100%;
-    padding: 3rem 0 2.8rem 0;
+    padding: 3rem 2.5rem 2.8rem 2.5rem;
     font-size: 140%;
     @include grid-media-query(lap-up) {
-      padding: 3.5rem 0 3.3rem 0;
+      padding: 3.5rem 2.5rem 3.3rem 2.5rem;
     }
   }
 }

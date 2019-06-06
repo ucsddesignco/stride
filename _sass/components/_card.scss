@@ -53,14 +53,32 @@ $shadow: 1.5rem;
   }
 }
 
-.bg-light-green {
+.bg-light-red {
+  .card {
+    box-shadow: $shadow $shadow 0 $light-red;
+    @include grid-media-query(portable) {
+      box-shadow: $shadow-portable $shadow-portable 0 $light-red;
+    }
+  }
+}
+
+.bg-light-blue {
+  .card {
+    box-shadow: $shadow $shadow 0 $light-blue;
+    @include grid-media-query(portable) {
+      box-shadow: $shadow-portable $shadow-portable 0 $light-blue;
+    }
+  }
+}
+
+/*.bg-light-green {
   .card {
     box-shadow: $shadow $shadow 0 $green;
     @include grid-media-query(portable) {
       box-shadow: $shadow-portable $shadow-portable 0 $green;
     }
   }
-}
+}*/
 
 .modal-overlay {
   position: fixed;
