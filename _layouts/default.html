@@ -13,7 +13,13 @@
           {% include cta.html %}
         </article>
       </main>
+      <div>
+        {% if page.slider %}
+          {% include slider.html height="50" unit="%" transition="slide" duration="7" %}
+        {% endif %}
+      </div>
     </div>
+    
     <div class="outer-container">
       {% include footer.html %}
     </div>

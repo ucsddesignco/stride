@@ -2,6 +2,18 @@
 layout: default
 title: Home
 url: ""
+slider:
+  text_color: white
+  shadow_color: black
+  slides: 
+    - image: /assets/images/illustrations/companies.svg
+      slide_html:
+    - image: /uploads/slider/samuel-zeller-356272.jpg
+      slide_html: "<h3>La Passione 1/2</h3>Shirley, do you own a Ferrari?"
+    - image: /uploads/slider/samuel-zeller-356338.jpg
+      slide_html: "<h3>La Passione 2/2</h3>Yes, my life is your dream."
+    - image: /uploads/slider/ricardo-gomez-angel-180819.jpg
+      slide_html:
 ---
 
 <div class="outer-container mb-3 mt-3">
@@ -12,12 +24,17 @@ url: ""
         <h2>January 2020 <span class="text-green">—</span> Location TBD</h2>
         <h2 class="mb-1">PC East Ballroom</h2>
         <p class="mb-1">
-          Stride connects top design students to career opportunities in the fields of human-centered design, human factors, user research, user experience, interaction design, UI design, visual design, content strategy, product management, product development, brand design, product design, UX engineering, web development and much more.
+          Stride connects top design students to career opportunities in the fields of human-centered design,
+          human factors, user research, user experience, interaction design, UI design, visual design, content
+          strategy, product management, product development, brand design, product design, UX engineering,
+          web development and much more.
         </p>
         <p><a class="btn btn-red" href="about">Learn More</a></p>
       </div>
       <div class="grid__item desk--one-half">
-        <div class="hero" id="runner"></div>
+        <div class="hero" id="runner">
+          <img src="assets/images/illustrations/Stride.json" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -30,19 +47,16 @@ url: ""
         <div class="grid__item desk--one-half portable--mb-2">
           <h1 class="mb-1 text-dark-red">Made for Designers</h1>
           <p>
-            The traditional career fair format isn’t catered toward 
-            students seeking design roles. Designers need a medium 
-            to showcase their work and experience. At Stride, students 
-            have the opportunity to secure individual time with recruiters 
-            to present their projects and portfolios. 
+            The traditional career fair format isn’t catered toward
+            students seeking design roles. Designers need a medium
+            to showcase their work and experience. At Stride, students
+            have the opportunity to secure individual time with recruiters
+            to present their projects and portfolios.
           </p>
         </div>
         <div class="grid__item desk--one-half">
           <div class="hero">
-            <img
-              src="assets/images/illustrations/"
-              alt=""
-            />
+            <img src="assets/images/illustrations/made_for_designers.svg" alt="" />
           </div>
         </div>
       </div>
@@ -63,39 +77,35 @@ url: ""
         <p class="mb-1">
           Looking to recruit top talent? Learn how to participate.
         </p>
-        <a
-          class="btn btn-red"
-          href="https://stridecompanyregistration.eventbrite.com/"
-          target="_blank"
-          >Contact Event Organizers</a
-        >
+        <a class="btn btn-red" href="https://stridecompanyregistration.eventbrite.com/" target="_blank">Contact Event
+          Organizers</a>
       </div>
       <div class="grid__item desk--one-half">
         <div class="hero">
-          <img src="assets/images/illustrations/" alt="" />
+          <img src="assets/images/illustrations/companies.svg" alt="" />
         </div>
       </div>
     </div>
   </div>
 </div>
 
-  <div class="outer-container">
-    <div class="inner-container">
-      <div class="grid mb-2">
-        <div class="grid__item desk--one-half">
-          <h1 class="text-dark portable--mb-1">Past Sponsors</h1>
-        </div>
-        <div class="grid__item desk--one-half desk--text-right">
-          <h2><a href="companies">View Full Company List ⟶</a></h2>
-        </div>
+<div class="outer-container">
+  <div class="inner-container">
+    <div class="grid mb-2">
+      <div class="grid__item desk--one-half">
+        <h1 class="text-dark portable--mb-1">Past Sponsors</h1>
       </div>
-      <div class="grid pb-3">
-        {% for company in site.data.companies %}{% unless company.hide %} {% if
-        company.home %} {% include company-card.html %} {% endif %} {% endunless
-        %}{% endfor %}
+      <div class="grid__item desk--one-half desk--text-right">
+        <h2><a href="companies">View Full Company List ⟶</a></h2>
       </div>
     </div>
+    <div class="grid pb-3">
+      {% for company in site.data.companies %}{% unless company.hide %} {% if
+        company.home %} {% include company-card.html %} {% endif %} {% endunless
+        %}{% endfor %}
+    </div>
   </div>
+</div>
 
 <div class="bg-light-blue">
   <div class="outer-container">
@@ -104,16 +114,14 @@ url: ""
         <div class="grid__item desk--one-half portable--mb-2">
           <h1 class="mb-1 text-blue">A Look Back</h1>
           <p class="mb-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.
           </p>
           <p class="mb-1">
             Duis aute irure dolor in reprehenderit in voluptate velit.
           </p>
-          <a
-            class="btn btn-red"
-            href="https://stridecompanyregistration.eventbrite.com/"
-            target="_blank"
-            >Read Our Article</a>
+          <a class="btn btn-red" href="https://stridecompanyregistration.eventbrite.com/" target="_blank">Read Our
+            Article</a>
         </div>
         <div class="grid__item desk--one-half">
           <div class="hero">
@@ -128,9 +136,6 @@ url: ""
 <script src="assets/scripts/lottie.js"></script>
 <script src="assets/scripts/lottie-index.js"></script>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"
-></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="assets/scripts/modal.js"></script>
