@@ -1,9 +1,15 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Sofia Pro", Avenir, sans-serif;
+  // font-family: "Neue Plak";
   font-size: $body-font-size;
   color: $body-font-color;
   line-height: 170%;
+}
+
+h1,
+h2 {
+  // font-family: "Neue Plak Extended";
 }
 
 h1 {
