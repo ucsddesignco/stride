@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Stride
-email: designatucsd@gmail.com
+title: Stride Design Career Fair
+email: hello@ucsddesign.co
 description: Stride is a design-centric career fair hosted by Design Co on January 14th, 2020 at PC East Ballroom.
 signup: "https://events.eventzilla.net/e/2020-stride-design-career-fair-company-registration-2138756216"
 baseurl: "" # the subpath of your site, e.g. /blog

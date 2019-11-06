@@ -13,7 +13,7 @@
     property="og:image"
     content="{{ site.url }}{{ site.base }}assets/images/preview.png"
   />
-  <meta property="og:url" content="https://stride.designatucsd.org/" />
+  <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:description" content="{{ site.description }}" />
 
   <!-- Google Analytics -->
@@ -74,9 +74,7 @@
 
   <title>
     {% if page.title == "Home" %}
-    {{ site.title }} | {{ site.description }} {% elsif page.title %}{{
-      page.title
-    }}
-    | {{ site.title }}{% else %}{% endif %}
+    {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{%
+    else %}{% endif %}
   </title>
 </head>
