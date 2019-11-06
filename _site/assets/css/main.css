@@ -386,7 +386,7 @@ p a:not(.btn) { text-decoration: underline; }
 b { font-weight: 500; }
 
 .highlight { position: relative; }
-.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #f9a825; z-index: -999; transition: opacity 0.3s; }
+.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #fdd34e; z-index: -999; transition: opacity 0.3s; }
 @media only screen and (max-width: 1023px) { .highlight::after { left: 0.3rem; top: 0.5rem; height: 1rem; } }
 @media (hover: hover) { .highlight:hover::after { opacity: 0; } }
 
@@ -745,10 +745,10 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 @media (hover: hover) { .btn.btn-dark-blue:hover { background-color: #181f23; } }
 .btn.btn-light-blue { color: #212121; background-color: #bbdefb; }
 @media (hover: hover) { .btn.btn-light-blue:hover { background-color: #99cef9; } }
+.btn.btn-yellow { color: #212121; background-color: #fdd34e; }
+@media (hover: hover) { .btn.btn-yellow:hover { background-color: #fdca2b; } }
 .btn.btn-red { background-color: #ef5350; }
 @media (hover: hover) { .btn.btn-red:hover { background-color: #ec332f; } }
-.btn.btn-yellow { background-color: #f9a825; }
-@media (hover: hover) { .btn.btn-yellow:hover { background-color: #f49907; } }
 .btn.btn-green { background-color: #2f8c7e; }
 @media (hover: hover) { .btn.btn-green:hover { background-color: #267166; } }
 

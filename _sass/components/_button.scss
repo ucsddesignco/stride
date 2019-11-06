@@ -24,17 +24,18 @@
     }
   }
 
+  &.btn-yellow {
+    color: $dark-gray;
+    background-color: $yellow;
+    @include hover {
+      background-color: darken($yellow, 7%);
+    }
+  }
+
   &.btn-red {
     background-color: $red;
     @include hover {
       background-color: darken($red, 7%);
-    }
-  }
-
-  &.btn-yellow {
-    background-color: $yellow;
-    @include hover {
-      background-color: darken($yellow, 7%);
     }
   }
 
