@@ -15,12 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: Stride
 email: designatucsd@gmail.com
-description: Stride is a design-centric career fair hosted by Design at UCSD on January 15th, 2019 at PC East Ballroom.
-signup: "https://stridestudentreg.eventbrite.com"
+description: Stride is a design-centric career fair hosted by Design Co on January 14th, 2020 at PC East Ballroom.
+signup: "https://events.eventzilla.net/e/2020-stride-design-career-fair-company-registration-2138756216"
 baseurl: "" # the subpath of your site, e.g. /blog
 base: "/"
-url: "https://stride.designatucsd.org" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: designatucsd
+url: "https://stride.ucsddesign.co" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: ucsddesignco
 
 # Build settings
 markdown: kramdown
