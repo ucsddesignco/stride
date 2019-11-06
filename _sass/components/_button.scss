@@ -10,6 +10,20 @@
   font-family: "NB International Mono", Arial, sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
+  &.btn-dark-blue {
+    background-color: $dark-blue;
+    @include hover {
+      background-color: darken($dark-blue, 7%);
+    }
+  }
+  &.btn-light-blue {
+    color: $dark-gray;
+    background-color: $light-blue;
+    @include hover {
+      background-color: darken($light-blue, 7%);
+    }
+  }
+
   &.btn-red {
     background-color: $red;
     @include hover {

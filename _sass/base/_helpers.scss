@@ -149,38 +149,15 @@
   }
 }
 
-.bg-red {
-  background-color: $red;
-}
-
-.bg-light-red {
-  background-color: $light-red;
-}
-
 .bg-light-blue {
-  background-color: #E3F2FD;
+  background-color: $light-blue;
 }
 
-.bg-yellow {
-  background-color: $yellow;
+.bg-dark-blue {
+  background-color: $dark-blue;
+  @extend .text-light;
 }
-
-.bg-pink {
-  background-color: #ffdede;
-}
-
-.bg-dark-green {
-  background-color: $dark-green;
-}
-
-.bg-light-green {
-  background-color: $light-green;
-}
-
-.bg-gray {
-  background-color: $wild-sand;
-}
-
+/*
 .text-red {
   color: $red;
 }
@@ -204,13 +181,17 @@
 .text-light-green {
   color: $light-green;
 }
-
+*/
 .text-dark {
-  color: $dark;
+  color: $gray;
 }
 
 .text-light {
   color: #fff;
+  h1,
+  h2 {
+    color: #fff;
+  }
 }
 
 .v-align-center {

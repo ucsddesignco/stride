@@ -373,18 +373,20 @@ img { width: 100%; }
 @font-face { font-family: "Sofia Pro"; src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff"); font-weight: 600; font-style: normal; }
 body { -webkit-font-smoothing: antialiased; font-family: "NB International Pro", Arial, sans-serif; font-weight: 300; letter-spacing: 0.02rem; font-size: 1.8rem; color: #424242; line-height: 170%; }
 
-h1, h2 { font-family: "Neue Plak Extended"; }
+h1, h2 { font-family: "Neue Plak Extended"; color: #212121; }
 
-h1 { color: #F9A825; font-weight: 600; font-size: 3.4rem; line-height: 120%; letter-spacing: 0.04rem; }
+h1 { font-weight: 600; font-size: 3.4rem; line-height: 120%; letter-spacing: 0.04rem; }
 
 h2 { font-size: 2.4rem; font-weight: 500; line-height: 140%; letter-spacing: 0.04rem; }
 
 a { color: inherit; text-decoration: none; }
 
+p a:not(.btn) { text-decoration: underline; }
+
 b { font-weight: 500; }
 
 .highlight { position: relative; }
-.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #F9A825; z-index: -999; transition: opacity 0.3s; }
+.highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #f9a825; z-index: -999; transition: opacity 0.3s; }
 @media only screen and (max-width: 1023px) { .highlight::after { left: 0.3rem; top: 0.5rem; height: 1rem; } }
 @media (hover: hover) { .highlight:hover::after { opacity: 0; } }
 
@@ -682,37 +684,33 @@ b { font-weight: 500; }
   .monitor--mb-2 { margin-bottom: 4rem !important; }
   .monitor--mb-3 { margin-bottom: 8rem !important; }
   .monitor--mb-4 { margin-bottom: 16rem !important; } }
-.bg-red { background-color: #ef5350; }
+.bg-light-blue { background-color: #bbdefb; }
 
-.bg-light-red { background-color: #FFEBEE; }
+.bg-dark-blue { background-color: #263238; }
 
-.bg-light-blue { background-color: #E3F2FD; }
+/*
+.text-red { color: $red;
+}
 
-.bg-yellow { background-color: #F9A825; }
+.text-blue { color: $blue;
+}
 
-.bg-pink { background-color: #ffdede; }
+.text-dark-red { color: $dark-red;
+}
 
-.bg-dark-green { background-color: #2f8c7e; }
+.text-green { color: $green;
+}
 
-.bg-light-green { background-color: #e0f2f1; }
+.text-dark-green { color: $dark-green;
+}
 
-.bg-gray { background-color: #f6f6f6; }
-
-.text-red { color: #ef5350; }
-
-.text-blue { color: #1976D2; }
-
-.text-dark-red { color: #E53935; }
-
-.text-green { color: #80cbc4; }
-
-.text-dark-green { color: #2f8c7e; }
-
-.text-light-green { color: #e0f2f1; }
-
+.text-light-green { color: $light-green;
+}
+*/
 .text-dark { color: #424242; }
 
-.text-light { color: #fff; }
+.text-light, .bg-dark-blue { color: #fff; }
+.text-light h1, .bg-dark-blue h1, .text-light h2, .bg-dark-blue h2 { color: #fff; }
 
 .v-align-center { height: 100%; display: flex; align-items: center; }
 
@@ -743,9 +741,13 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 @media (hover: hover) { nav a:not(.btn):hover:before { width: 1.6rem; } }
 
 .btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.3rem 2rem 2rem; font-family: "NB International Mono", Arial, sans-serif; font-size: 1.3rem; text-transform: uppercase; }
+.btn.btn-dark-blue { background-color: #263238; }
+@media (hover: hover) { .btn.btn-dark-blue:hover { background-color: #181f23; } }
+.btn.btn-light-blue { color: #212121; background-color: #bbdefb; }
+@media (hover: hover) { .btn.btn-light-blue:hover { background-color: #99cef9; } }
 .btn.btn-red { background-color: #ef5350; }
 @media (hover: hover) { .btn.btn-red:hover { background-color: #ec332f; } }
-.btn.btn-yellow { background-color: #F9A825; }
+.btn.btn-yellow { background-color: #f9a825; }
 @media (hover: hover) { .btn.btn-yellow:hover { background-color: #f49907; } }
 .btn.btn-green { background-color: #2f8c7e; }
 @media (hover: hover) { .btn.btn-green:hover { background-color: #267166; } }
@@ -763,11 +765,11 @@ nav a:not(.btn).active:before { width: 1.6rem; }
 .bg-yellow .card { box-shadow: 1.5rem 1.5rem 0 #ffcc80; }
 @media only screen and (max-width: 1023px) { .bg-yellow .card { box-shadow: 1rem 1rem 0 #ffcc80; } }
 
-.bg-light-red .card { box-shadow: 1.5rem 1.5rem 0 #FFEBEE; }
-@media only screen and (max-width: 1023px) { .bg-light-red .card { box-shadow: 1rem 1rem 0 #FFEBEE; } }
+.bg-light-red .card { box-shadow: 1.5rem 1.5rem 0 #ffebee; }
+@media only screen and (max-width: 1023px) { .bg-light-red .card { box-shadow: 1rem 1rem 0 #ffebee; } }
 
-.bg-light-blue .card { box-shadow: 1.5rem 1.5rem 0 #E3F2FD; }
-@media only screen and (max-width: 1023px) { .bg-light-blue .card { box-shadow: 1rem 1rem 0 #E3F2FD; } }
+.bg-light-blue .card { box-shadow: 1.5rem 1.5rem 0 #bbdefb; }
+@media only screen and (max-width: 1023px) { .bg-light-blue .card { box-shadow: 1rem 1rem 0 #bbdefb; } }
 
 /*.bg-light-green { .card { box-shadow: $shadow $shadow 0 $green; @include grid-media-query(portable) { box-shadow: $shadow-portable $shadow-portable 0 $green; } }
 }*/

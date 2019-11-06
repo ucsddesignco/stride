@@ -1,19 +1,24 @@
 // Color palette
 $red: #ef5350; // Red - for buttons
-$dark-red: #E53935;
-$light-red: #FFEBEE;
-$yellow: #F9A825;
+$dark-red: #e53935;
+$light-red: #ffebee;
+$yellow: #f9a825;
 $dark: #424242; // Black
 $green: #80cbc4; // Green
 $dark-green: #2f8c7e; // Dark Green
 $light-green: #e0f2f1; // Light green
 $light-yellow: #ffecb3; // Yellow
-$blue: #1976D2;
-$light-blue:#E3F2FD;
+$blue: #1976d2;
+$light-blue: #e3f2fd;
 $dark-yellow: #ffcc80; // Dark yellow
 $wild-sand: #f6f6f6; // Light gray
 
-$body-font-color: $dark;
+$dark-gray: #212121;
+$gray: #424242;
+$dark-blue: #263238;
+$light-blue: #bbdefb;
+
+$body-font-color: $gray;
 
 $spacer-1: 2rem;
 $spacer-2: 4rem;

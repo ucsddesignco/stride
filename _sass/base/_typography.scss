@@ -13,10 +13,10 @@ body {
 h1,
 h2 {
   font-family: "Neue Plak Extended";
+  color: $dark-gray;
 }
 
 h1 {
-  color: $yellow;
   font-weight: $bold;
   font-size: 3.4rem;
   line-height: 120%;
@@ -33,6 +33,13 @@ h2 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  a:not(.btn) {
+    // opacity: 0.5;
+    text-decoration: underline;
+  }
 }
 
 b {
