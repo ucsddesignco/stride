@@ -365,14 +365,19 @@ img { width: 100%; }
 #cta-btn .btn { padding: 3rem 2.5rem 2.8rem 2.5rem; font-size: 140%; }
 @media only screen and (min-width: 481px) { #cta-btn .btn { padding: 3.5rem 2.5rem 3.3rem 2.5rem; } }
 
-@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff"); font-weight: 400; font-style: normal; }
-@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProMedium.woff2") format("woff2"), url("/assets/fonts/SofiaProMedium.woff") format("woff"); font-weight: 500; font-style: normal; }
-@font-face { font-family: 'Sofia Pro'; src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff"); font-weight: 600; font-style: normal; }
-body { -webkit-font-smoothing: antialiased; font-family: "Sofia Pro", Avenir, sans-serif; font-size: 1.8rem; color: #424242; line-height: 170%; }
+@font-face { font-family: "Neue Plak Extended"; src: url("/assets/fonts/neue-plak/NeuePlak-ExtendedBold.woff2") format("woff2"), url("/assets/fonts/neue-plak/NeuePlak-ExtendedBold.woff") format("woff"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "NB International Mono"; src: url("/assets/fonts/nb-international/NBInternationalMonoWebfont.woff2") format("woff2"), url("/assets/fonts/nb-international/NBInternationalMonoWebfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "NB International Pro"; src: url("/assets/fonts/nb-international/NBInternationalPro-Lig.woff2") format("woff2"), url("/assets/fonts/nb-international/NBInternationalPro-Lig.woff") format("woff"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Sofia Pro"; src: url("/assets/fonts/SofiaProRegular.woff2") format("woff2"), url("/assets/fonts/SofiaProRegular.woff") format("woff"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Sofia Pro"; src: url("/assets/fonts/SofiaProMedium.woff2") format("woff2"), url("/assets/fonts/SofiaProMedium.woff") format("woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Sofia Pro"; src: url("/assets/fonts/SofiaProBold.woff2") format("woff2"), url("/assets/fonts/SofiaProBold.woff") format("woff"); font-weight: 600; font-style: normal; }
+body { -webkit-font-smoothing: antialiased; font-family: "NB International Pro", Arial, sans-serif; font-weight: 300; letter-spacing: 0.02rem; font-size: 1.8rem; color: #424242; line-height: 170%; }
 
-h1 { color: #F9A825; font-weight: 600; font-size: 3.4rem; line-height: 120%; }
+h1, h2 { font-family: "Neue Plak Extended"; }
 
-h2 { font-size: 2.4rem; font-weight: 500; line-height: 140%; }
+h1 { color: #F9A825; font-weight: 600; font-size: 3.4rem; line-height: 120%; letter-spacing: 0.04rem; }
+
+h2 { font-size: 2.4rem; font-weight: 500; line-height: 140%; letter-spacing: 0.04rem; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -737,7 +742,7 @@ nav a:not(.btn):before { content: ""; position: absolute; width: 0%; height: 0.3
 nav a:not(.btn).active:before { width: 1.6rem; }
 @media (hover: hover) { nav a:not(.btn):hover:before { width: 1.6rem; } }
 
-.btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.3rem 2rem 2rem; }
+.btn { display: inline-block; text-align: center; white-space: nowrap; line-height: 0; color: #fff; transition: background-color 0.3s; font-weight: 500; padding: 2.3rem 2rem 2rem; font-family: "NB International Mono", Arial, sans-serif; font-size: 1.3rem; text-transform: uppercase; }
 .btn.btn-red { background-color: #ef5350; }
 @media (hover: hover) { .btn.btn-red:hover { background-color: #ec332f; } }
 .btn.btn-yellow { background-color: #F9A825; }

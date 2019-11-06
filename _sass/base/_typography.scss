@@ -1,6 +1,9 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Sofia Pro", Avenir, sans-serif;
+  // font-family: "Sofia Pro", Avenir, sans-serif;
+  font-family: "NB International Pro", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
   // font-family: "Neue Plak";
   font-size: $body-font-size;
   color: $body-font-color;
@@ -9,7 +12,7 @@ body {
 
 h1,
 h2 {
-  // font-family: "Neue Plak Extended";
+  font-family: "Neue Plak Extended";
 }
 
 h1 {
@@ -17,12 +20,14 @@ h1 {
   font-weight: $bold;
   font-size: 3.4rem;
   line-height: 120%;
+  letter-spacing: 0.04rem;
 }
 
 h2 {
   font-size: 2.4rem;
   font-weight: $semibold;
   line-height: 140%;
+  letter-spacing: 0.04rem;
 }
 
 a {

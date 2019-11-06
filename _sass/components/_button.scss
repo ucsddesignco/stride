@@ -7,6 +7,9 @@
   transition: background-color 0.3s;
   font-weight: $semibold;
   padding: 2.3rem 2rem 2rem;
+  font-family: "NB International Mono", Arial, sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   &.btn-red {
     background-color: $red;
     @include hover {
