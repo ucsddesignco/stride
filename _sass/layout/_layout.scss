@@ -20,7 +20,7 @@ header {
 #stride-logo {
   line-height: 0;
   img {
-    width: 10.5rem;
+    width: 12rem;
   }
   @include grid-media-query(portable) {
     display: flex;

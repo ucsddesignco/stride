@@ -725,7 +725,7 @@ header, footer { font-weight: 500; display: flex; justify-content: space-between
   header .btn { padding: 1.7rem 1.5rem 1.5rem; margin-left: 2rem; } }
 
 #stride-logo { line-height: 0; }
-#stride-logo img { width: 10.5rem; }
+#stride-logo img { width: 12rem; }
 @media only screen and (max-width: 1023px) { #stride-logo { display: flex; align-items: center; } }
 
 footer { height: calc(9.8rem); }
