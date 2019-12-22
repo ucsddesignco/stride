@@ -208,9 +208,9 @@
   position: sticky;
   bottom: -35vh;
   @include grid-media-query(portable) {
-    bottom: -60vh;
+    bottom: -160vh;
   }
   @include grid-media-query(palm) {
-    bottom: -90vh;
+    bottom: -100vh;
   }
 }
