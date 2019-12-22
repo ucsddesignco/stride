@@ -8,6 +8,16 @@
     - title: Product Design Intern
       link: https://careers.intuit.com/job-category/21/university/job/2019-8400/product-design-intern-san-diego
 
+- name: Sony
+  home: true
+  logo: sony.png
+  url: https://www.sony.com/
+  description: Sony’s mission is simple. We aim to inspire and fulfill curiosity across the globe. We want to be responsible for getting hearts racing, stirring ambition, and putting a smile on the faces of our customers.
+  visa: "Yes"
+  roles:
+    - title: Human Factors Engineering & Interaction Design Intern
+      link: https://drive.google.com/open?id=0B5n1fj_TjnVOSHVsaURvNGtBSjNxa1RiWDNnb1ZKaFduMjFR
+
 - name: ServiceNow
   home: true
   logo: servicenow.png
@@ -20,21 +30,19 @@
     - title: "UI/UX Design Intern: Design Systems"
       link: https://jobs.jobvite.com/careers/servicenow/job/oOED8fwX?__jvst=Job%20Board&__jvsd=UCSD
 
-- name: Sony
-  home: true
-  logo: sony.png
-  url: https://www.sony.com/
-  description: Sony’s mission is simple. We aim to inspire and fulfill curiosity across the globe. We want to be responsible for getting hearts racing, stirring ambition, and putting a smile on the faces of our customers.
-  visa: "Yes"
-  roles:
-    - title: Human Factors Engineering & Interaction Design Intern
-      link: https://drive.google.com/open?id=0B5n1fj_TjnVOSHVsaURvNGtBSjNxa1RiWDNnb1ZKaFduMjFR
-
 - name: Atlassian
   home: true
   logo: atlassian.svg
   url: https://www.atlassian.com/
   description: Atlassian is a leading provider of collaboration, development, and issue tracking software for teams. With over 138,000 global customers (including 85 of the Fortune 100), we’re advancing the power of collaboration with products including Jira, Jira Service Desk, Jira Ops, Confluence, Bitbucket, Trello, and more. Driven by honest values, an amazing culture, and consistent revenue growth, we’re out to unleash the potential of every team.
+  visa: TBD
+
+- name: GoSite
+  home: false
+  logo: gosite.png
+  url: https://www.gosite.com/
+  description: GoSite creates simplified technology for the small businesses that drive America’s economy. Our software empowers them to have everything they need in one place to connect with their customers in the digital era. Our cloud based suite of mobile and web tools transforms the way our customers run their business, on the go and everywhere.
+  visa: TBD
 
 # - name: Oath
 #   logo: oath.png
@@ -91,11 +99,11 @@
 #   description: Nanome is transforming how we interact with and understand science, creating a virtual world where users can experiment, design and learn at the nanoscale.
 #   visa: TBD
 
-- name: Seismic Software
-  logo: seismic.png
-  url: https://seismic.com/
-  description: Seismic is San Diego’s most valuable software startup, recently reaching unicorn status. We believe that behind every great brand is an epic story. We go above and beyond to help our customers unite around what makes them great, share it with those who matter most, and shine above the competition. We know that our customers need us to be at the top of our game so that they can be at the top of theirs.
-  visa: "No"
+# - name: Seismic Software
+#   logo: seismic.png
+#   url: https://seismic.com/
+#   description: Seismic is San Diego’s most valuable software startup, recently reaching unicorn status. We believe that behind every great brand is an epic story. We go above and beyond to help our customers unite around what makes them great, share it with those who matter most, and shine above the competition. We know that our customers need us to be at the top of our game so that they can be at the top of theirs.
+#   visa: "No"
 
 # - name: Learning Equality
 #   logo: learning-equality.svg
@@ -105,11 +113,11 @@
 #   roles:
 #     - title: Front-End Development Intern
 
-- name: Visa
-  logo: visa.svg
-  url: https://design.visa.com/
-  description: Visa Inc. is the world’s leader in digital payments. Their mission is to connect the world through the most innovative, reliable and secure payment network - enabling individuals, businesses and economies to thrive.
-  visa: Graduate students only
-  roles:
-    - title: UX Designer, New Grad
-      link: https://drive.google.com/open?id=0B5n1fj_TjnVOVXlOM0dRdzdKQzctYmpGNnpPMlBCcEtmdWQ0
+# - name: Visa
+#   logo: visa.svg
+#   url: https://design.visa.com/
+#   description: Visa Inc. is the world’s leader in digital payments. Their mission is to connect the world through the most innovative, reliable and secure payment network - enabling individuals, businesses and economies to thrive.
+#   visa: Graduate students only
+#   roles:
+#     - title: UX Designer, New Grad
+#       link: https://drive.google.com/open?id=0B5n1fj_TjnVOVXlOM0dRdzdKQzctYmpGNnpPMlBCcEtmdWQ0
