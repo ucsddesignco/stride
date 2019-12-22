@@ -203,3 +203,14 @@
 .text-center {
   text-align: center;
 }
+
+.sticky { 
+  position: sticky;
+  bottom: -35vh;
+  @include grid-media-query(portable) {
+    bottom: -60vh;
+  }
+  @include grid-media-query(palm) {
+    bottom: -90vh;
+  }
+}
