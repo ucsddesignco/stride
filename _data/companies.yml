@@ -30,60 +30,66 @@
     - title: Human Factors Engineering & Interaction Design Intern
       link: https://drive.google.com/open?id=0B5n1fj_TjnVOSHVsaURvNGtBSjNxa1RiWDNnb1ZKaFduMjFR
 
-- name: Oath
-  logo: oath.png
-  url: https://www.oath.com/
-  description: Passionate in creating intuitive and engaging digital products with a modern, balanced, clean and concise design sense. Design culture is to deliver brands that people love with a mobile-first mentality.
-  visa: "Yes"
-  roles:
-    - title: Associate Program - Designer II
-      link: https://oath.wd5.myworkdayjobs.com/careers/job/US---New-York/Associate-Program---Designer-II_JR0003866-1
+- name: Atlassian
+  home: true
+  logo: atlassian.svg
+  url: https://www.atlassian.com/
+  description: Atlassian is a leading provider of collaboration, development, and issue tracking software for teams. With over 138,000 global customers (including 85 of the Fortune 100), we’re advancing the power of collaboration with products including Jira, Jira Service Desk, Jira Ops, Confluence, Bitbucket, Trello, and more. Driven by honest values, an amazing culture, and consistent revenue growth, we’re out to unleash the potential of every team.
 
-- name: AT&T
-  hide: true
-  logo: att.png
-  url: https://www.att.com/
-  description:
+# - name: Oath
+#   logo: oath.png
+#   url: https://www.oath.com/
+#   description: Passionate in creating intuitive and engaging digital products with a modern, balanced, clean and concise design sense. Design culture is to deliver brands that people love with a mobile-first mentality.
+#   visa: "Yes"
+#   roles:
+#     - title: Associate Program - Designer II
+#       link: https://oath.wd5.myworkdayjobs.com/careers/job/US---New-York/Associate-Program---Designer-II_JR0003866-1
 
-- name: Mitchell International
-  logo: mitchell.png
-  url: http://www.mitchell.com/
-  description: Mitchell’s solutions provide an expert level of decision support and connectivity within the claims organization and with industry partners to achieve optimal outcomes.
-  visa: TBD
+# - name: AT&T
+#   hide: true
+#   logo: att.png
+#   url: https://www.att.com/
+#   description:
 
-- name: American Specialty Health
-  logo: ash.svg
-  url: https://ashdesign.splashthat.com
-  description: ASH’s mission is to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us as we empower individuals to live healthier and longer!
-  visa: "Yes"
-  roles:
-    - title: UX Design Intern
-      link: https://www.ashcompanies.com/Careers/JobDescription?jobCode=18-0915-2
+# - name: Mitchell International
+#   logo: mitchell.png
+#   url: http://www.mitchell.com/
+#   description: Mitchell’s solutions provide an expert level of decision support and connectivity within the claims organization and with industry partners to achieve optimal outcomes.
+#   visa: TBD
 
-- name: Round Feather
-  logo: roundfeather.jpg
-  url: https://www.roundfeather.com/
-  description: We are a management consulting firm that believes innovation starts with understanding and addressing people's happiness. Emotion-driven, human-centric design lies at the core of our proprietary Design for Happiness™ approach which focuses on uncovering the unarticulated needs of a person when they use a product or service. Using insights gained from our research, we identify ways to reconcile the emotional dilemmas people face when making decisions. Using our methodology, we help our clients identify new ways to approach products, services, and branding that captures new customers and inspires loyalty with existing customers.
-  visa: "No"
-  roles:
-    - title: Design Research Intern
-      link: https://drive.google.com/file/d/0B5n1fj_TjnVOdG0xaGFKc1NhS2E4amhLWFNXZHF5WVZGTFJR/view?usp=sharing
-    - title: UI/UX Design Intern
-      link: https://drive.google.com/file/d/0B5n1fj_TjnVOcTBHTzQ4X0pRS1B6MzNtWlNSLXNNVjNUSS00/view?usp=sharing
+# - name: American Specialty Health
+#   logo: ash.svg
+#   url: https://ashdesign.splashthat.com
+#   description: ASH’s mission is to transform the landscape of health and fitness. We design and enhance high-quality digital experiences using Design Thinking and Lean UX process. Come join us as we empower individuals to live healthier and longer!
+#   visa: "Yes"
+#   roles:
+#     - title: UX Design Intern
+#       link: https://www.ashcompanies.com/Careers/JobDescription?jobCode=18-0915-2
 
-- name: Aira
-  logo: aira.png
-  url: http://aira.io/
-  description: Aira is a service that uses artificial intelligence and augmented reality to connect people to highly trained, remotely-located agents. At the touch of a button, Aira delivers instant access to information, enhancing everyday efficiency, engagement, and independence.
-  visa: "If candidate is exceptional"
-  roles:
-    - title: Product Designer
+# - name: Round Feather
+#   logo: roundfeather.jpg
+#   url: https://www.roundfeather.com/
+#   description: We are a management consulting firm that believes innovation starts with understanding and addressing people's happiness. Emotion-driven, human-centric design lies at the core of our proprietary Design for Happiness™ approach which focuses on uncovering the unarticulated needs of a person when they use a product or service. Using insights gained from our research, we identify ways to reconcile the emotional dilemmas people face when making decisions. Using our methodology, we help our clients identify new ways to approach products, services, and branding that captures new customers and inspires loyalty with existing customers.
+#   visa: "No"
+#   roles:
+#     - title: Design Research Intern
+#       link: https://drive.google.com/file/d/0B5n1fj_TjnVOdG0xaGFKc1NhS2E4amhLWFNXZHF5WVZGTFJR/view?usp=sharing
+#     - title: UI/UX Design Intern
+#       link: https://drive.google.com/file/d/0B5n1fj_TjnVOcTBHTzQ4X0pRS1B6MzNtWlNSLXNNVjNUSS00/view?usp=sharing
 
-- name: Nanome
-  logo: nanome.png
-  url: https://nanome.ai/
-  description: Nanome is transforming how we interact with and understand science, creating a virtual world where users can experiment, design and learn at the nanoscale.
-  visa: TBD
+# - name: Aira
+#   logo: aira.png
+#   url: http://aira.io/
+#   description: Aira is a service that uses artificial intelligence and augmented reality to connect people to highly trained, remotely-located agents. At the touch of a button, Aira delivers instant access to information, enhancing everyday efficiency, engagement, and independence.
+#   visa: "If candidate is exceptional"
+#   roles:
+#     - title: Product Designer
+
+# - name: Nanome
+#   logo: nanome.png
+#   url: https://nanome.ai/
+#   description: Nanome is transforming how we interact with and understand science, creating a virtual world where users can experiment, design and learn at the nanoscale.
+#   visa: TBD
 
 - name: Seismic Software
   logo: seismic.png
@@ -91,13 +97,13 @@
   description: Seismic is San Diego’s most valuable software startup, recently reaching unicorn status. We believe that behind every great brand is an epic story. We go above and beyond to help our customers unite around what makes them great, share it with those who matter most, and shine above the competition. We know that our customers need us to be at the top of our game so that they can be at the top of theirs.
   visa: "No"
 
-- name: Learning Equality
-  logo: learning-equality.svg
-  url: https://learningequality.org/
-  description: Learning Equality is a UCSD-based edtech nonprofit dedicated to providing equitable access to quality education for every person in the world. We enable offline use of open, digital educational resources and create tools and resources to support innovative pedagogy. We design for both in and out-of-school, refugee, and other learning contexts.
-  visa: TBD
-  roles:
-    - title: Front-End Development Intern
+# - name: Learning Equality
+#   logo: learning-equality.svg
+#   url: https://learningequality.org/
+#   description: Learning Equality is a UCSD-based edtech nonprofit dedicated to providing equitable access to quality education for every person in the world. We enable offline use of open, digital educational resources and create tools and resources to support innovative pedagogy. We design for both in and out-of-school, refugee, and other learning contexts.
+#   visa: TBD
+#   roles:
+#     - title: Front-End Development Intern
 
 - name: Visa
   logo: visa.svg

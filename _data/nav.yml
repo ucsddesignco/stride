@@ -1,13 +1,15 @@
-#- title: Home
+- title: Home
   url: ""
-#- title: About
+- title: About
   url: about
-#- title: Companies
+- title: Companies
   url: companies
-#- title: A Look Back
-#  url: a-look-back
-#- title: Schedule
-  url: schedule
-#- title: Volunteer
-  newtab: true
-  url: https://docs.google.com/forms/d/e/1FAIpQLSdt6VVZd8dBxQUQNK8Qp9sDTrAkV_RRuVAs_fLFfRIeyqJKxA/viewform
+- title: Prepping For Stride
+  url: https://docs.google.com/presentation/d/159kEktP6bRSRWa0fG8Jxyl-CeiORcMJOUuwuvou8oZY/edit?usp=sharing
+# - title: A Look Back
+#   url: a-look-back
+# - title: Schedule
+#   url: schedule
+# - title: Volunteer
+#   newtab: true
+#   url: https://docs.google.com/forms/d/e/1FAIpQLSdt6VVZd8dBxQUQNK8Qp9sDTrAkV_RRuVAs_fLFfRIeyqJKxA/viewform
