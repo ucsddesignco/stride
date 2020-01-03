@@ -36,6 +36,20 @@
   description: GoSite creates simplified technology for the small businesses that drive America’s economy. Our software empowers them to have everything they need in one place to connect with their customers in the digital era. Our cloud based suite of mobile and web tools transforms the way our customers run their business, on the go and everywhere.
   visa: TBD
 
+- name: Accel Robotics
+  home: false
+  logo: accel-robotics.svg
+  url: https://www.accelrobotics.com/
+  description: Accel Robotics enables checkout-free shopping experiences across existing and emerging store formats. Our camera-based AI system allows any shopper to enter a store, pick the items they want, then walk out, receiving a receipt via text or app notification. The end result is a better, more convenient, shopping experience that improves existing stores while enabling new stores where people live, work, travel, and play.
+  visa: TBD
+
+- name: Nanome
+  home: false
+  logo: nanome.png
+  url: https://nanome.ai/
+  description: Nanome is a software company that is changing the way humanity understands and interacts with science. Using Virtual Reality our technology accelerates innovation and understanding in an intuitive manner.
+  visa: TBD
+
 # - name: Oath
 #   logo: oath.png
 #   url: https://www.oath.com/
