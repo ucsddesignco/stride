@@ -50,6 +50,13 @@
   description: Nanome is a software company that is changing the way humanity understands and interacts with science. Using Virtual Reality our technology accelerates innovation and understanding in an intuitive manner.
   visa: TBD
 
+- name: Roku
+  home: false
+  logo: roku.svg
+  url: https://www.roku.com/
+  description: Roku pioneered streaming to the TV. We connect users to the streaming content they love, enable content publishers to build and monetize large audiences, and provide advertisers with unique capabilities to engage consumers. Roku streaming players and Roku TV™ models are available around the world through direct retail sales and licensing arrangements with TV OEMs and service operators.
+  visa: TBD
+
 # - name: Oath
 #   logo: oath.png
 #   url: https://www.oath.com/
