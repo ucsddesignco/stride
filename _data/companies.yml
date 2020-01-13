@@ -74,7 +74,7 @@
   logo: gosite.png
   url: https://www.gosite.com/
   description: GoSite creates simplified technology for the small businesses that drive America’s economy. Our software empowers them to have everything they need in one place to connect with their customers in the digital era. Our cloud based suite of mobile and web tools transforms the way our customers run their business, on the go and everywhere.
-  visa: TBD
+  auth:
   roles:
     - title: Customer Support Internship
       link: https://grnh.se/6c3bbeb32
@@ -90,14 +90,14 @@
   logo: accel-robotics.svg
   url: https://www.accelrobotics.com/
   description: Accel Robotics enables checkout-free shopping experiences across existing and emerging store formats. Our camera-based AI system allows any shopper to enter a store, pick the items they want, then walk out, receiving a receipt via text or app notification. The end result is a better, more convenient, shopping experience that improves existing stores while enabling new stores where people live, work, travel, and play.
-  visa: TBD
+  auth:
 
 - name: Nanome
   home: false
   logo: nanome.png
   url: https://nanome.ai/
   description: Nanome is a software company that is changing the way humanity understands and interacts with science. Using Virtual Reality our technology accelerates innovation and understanding in an intuitive manner.
-  visa: TBD
+  auth:
   roles:
     - title: Virtual Reality Development Internship
     - title: UX/UI Designer
@@ -109,7 +109,7 @@
   logo: roku.svg
   url: https://www.roku.com/
   description: Roku pioneered streaming to the TV. We connect users to the streaming content they love, enable content publishers to build and monetize large audiences, and provide advertisers with unique capabilities to engage consumers. Roku streaming players and Roku TV™ models are available around the world through direct retail sales and licensing arrangements with TV OEMs and service operators.
-  visa: TBD
+  auth:
 
 # - name: Oath
 #   logo: oath.png

@@ -27,7 +27,11 @@
               <div class="mb-1">
                 <p><b>Open Roles</b></p>
                 {% for role in company.roles %}
-                <p><a href="{{ role.link }}" target="_blank">{{ role.title }}</a></p>
+                  {% if role.link %}
+                    <p><a href="{{ role.link }}" target="_blank">{{ role.title }}</a></p>
+                  {% else %}
+                    <p>{{ role.title }}</p>
+                  {% endif %}
                 {% endfor %}
               </div>
               {% endif %}

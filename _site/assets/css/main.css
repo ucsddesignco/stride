@@ -383,7 +383,7 @@ a { color: inherit; text-decoration: none; }
 
 p a:not(.btn) { text-decoration: underline; }
 
-b { font-weight: 500; }
+b { font-weight: 600; }
 
 .highlight { position: relative; }
 .highlight::after { position: absolute; left: 0.5rem; top: 0.6rem; content: ""; width: 98%; height: 1.3rem; background-color: #fdd34e; z-index: -999; transition: opacity 0.3s; }
