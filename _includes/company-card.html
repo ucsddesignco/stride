@@ -27,15 +27,19 @@
               <div class="mb-1">
                 <p><b>Open Roles</b></p>
                 {% for role in company.roles %}
-                <a href="{{ role.link }}" target="_blank">{{ role.title }}</a
-                >{% endfor %}
+                <p><a href="{{ role.link }}" target="_blank">{{ role.title }}</a></p>
+                {% endfor %}
               </div>
               {% endif %}
 
+              {% if company.auth %}
               <div class="mb-1">
-                <p><b>Visa Sponsorship</b></p>
-                <p>{{ company.visa }}</p>
+                <p><b>Work Authorization</b></p>
+                {% for auth in company.auth %}
+                <p>{{ auth.title }}</p>
+                {% endfor %}
               </div>
+              {% endif %}
 
               <div class="mb-1">
                 <p><b>Company Site</b></p>
